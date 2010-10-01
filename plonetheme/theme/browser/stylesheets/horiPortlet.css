@@ -1,0 +1,14 @@
+.portlet{
+	background-image:url(++resource++plonetheme.zopeorg.images/left_coloumn.jpg);
+	background-repeat:no-repeat;
+	float:left;
+	padding:20px 20px 20px;
+	width:280px;
+	margin:0 0 0 10px;
+
+}
+#portletManager {
+	margin-left: -10px;
+}
+
+

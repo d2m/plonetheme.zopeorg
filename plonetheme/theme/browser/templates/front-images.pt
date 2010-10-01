@@ -1,0 +1,22 @@
+<div class="front-image-container">
+	<div tal:define="image1  nocall:here/frontpage-stuff/image1;
+			 image1_link  nocall:here/frontpage-stuff/image1-link">
+
+		<tal:block tal:define="image_url image1/getURL|image1/absolute_url;
+				       link_url image1_link/getRemoteUrl;">
+			<a class="imagelink" tal:attributes="href string:${link_url}">
+				<img src="#" tal:attributes="src string:${image_url}/image1" />
+			</a>
+		</tal:block>
+	</div>
+
+	<div tal:define="image2  nocall:here/frontpage-stuff/image2;
+			 image2_link  nocall:here/frontpage-stuff/image2-link">
+		<tal:block tal:define="image_url image2/getURL|image2/absolute_url;
+				       link_url image2_link/getRemoteUrl;">
+			<a class="imagelink" tal:attributes="href string:${link_url}">
+				<img src="#" tal:attributes="src string:${image_url}/image2" />
+			</a>
+		</tal:block>
+	</div>
+</div>

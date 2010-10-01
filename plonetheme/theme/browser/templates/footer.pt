@@ -1,0 +1,11 @@
+<div id="feeter_left">
+	<h2>Diese Seiten werden mit Hilfe von Plone gepflegt.</h2>
+	<p>Plone Open Source Content Managment System Copyright © 2000-2010 Plone Foundation &amp; friends.<br/>
+	    Plone und das Plone-Logo sind eingetragene Warenzeichen der Plone Foundation. Lizensiert unter GPL-Lizenz.</p>
+	<h3>© 2010 DZUG e.V. — Deutschsprachige Zope User Group</h3>   
+    </div>
+
+
+    <div id="feeter_right">
+	<a href="" tal:attributes="href python: view.navigation_root_url"><img alt="Zope" src="++resource++plonetheme.zopeorg.images/zope_logo_feeter.gif"/></a>
+    </div>

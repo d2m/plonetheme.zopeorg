@@ -1,0 +1,174 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.zopeorg">
+
+  <!-- 'Zope.de Theme' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Zope.de Theme"
+      />
+
+  <include package="plone.app.contentmenu" />
+  <include package="plone.app.portlets" />
+  <include package="collective.easyslider" />
+
+
+  <!-- Viewlets registration -->
+  <!-- Zope 3 browser resources -->
+
+  <!-- Resource directory for images -->
+  <browser:resourceDirectory
+      name="plonetheme.zopeorg.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- Resource directory for stylesheets -->
+  <browser:resourceDirectory
+      name="plonetheme.zopeorg.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="zope_de.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      layer=".interfaces.IThemeSpecific"
+      class=".searchbox.SearchBoxViewlet"
+      permission="zope2.View"
+      />
+
+
+ <browser:viewlet
+      name="zope_de.path_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      layer=".interfaces.IThemeSpecific"
+      class=".path_bar.PathBarViewlet"
+      permission="zope2.View"
+      />
+
+ <browser:viewlet
+      name="zope_de.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      layer=".interfaces.IThemeSpecific"
+      class=".footer.FooterViewlet"
+      permission="zope2.View"
+      />
+
+
+  <browser:page
+      for="*"
+      name="page_portlets"
+      class=".portletview.PagePortletView"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:menuItem
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      menu="plone_displayviews"
+      title="Page Portlets"
+      action="@@page_portlets"
+      description="This is a View displaying horizontal Portlets"
+      />
+
+  <browser:page
+      layer=".interfaces.IThemeSpecific"
+      for="plone.portlets.interfaces.ILocalPortletAssignable"
+      class="plone.app.portlets.browser.manage.ManageContextualPortlets"
+      name="manage-page-portlets"
+      template="templates/managePagePortlets.pt"
+      permission="plone.app.portlets.ManagePortlets"
+  />
+
+  <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.news.INewsPortlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/news.pt"
+      />
+  
+
+  <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.events.IEventsPortlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/events.pt"
+      />
+
+  <plone:portletRenderer
+      portlet="plone.app.portlets.portlets.rss.IRSSPortlet"
+      layer=".interfaces.IThemeSpecific"
+      class=".rss_renderer.RSSRenderer"
+      />
+ 
+
+  <plone:portletRenderer
+      for=".interfaces.IFrontPage"
+      portlet="plone.app.portlets.portlets.news.INewsPortlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/short-news.pt"
+      />
+  
+
+  <plone:portletRenderer
+      for=".interfaces.IFrontPage"
+      portlet="plone.app.portlets.portlets.events.IEventsPortlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/short-events.pt"
+      />
+
+  <plone:portletRenderer
+      for=".interfaces.IFrontPage"
+      portlet="plone.app.portlets.portlets.rss.IRSSPortlet"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/short-rss.pt"
+      />
+
+
+  <browser:viewlet
+      name="collective.easyslider"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      class="collective.easyslider.browser.viewlet.EasySlider"
+      layer=".interfaces.IThemeSpecific"
+      permission="zope2.View" 
+      />
+
+  <browser:viewlet
+      for=".interfaces.IFrontPage"
+      name="zope_de.front_images"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      layer=".interfaces.IThemeSpecific"
+      template="templates/front-images.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      for="*"
+      name="frontpage-view"
+      class=".frontpage.FrontPageView"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:menuItem
+      for="*"
+      layer=".interfaces.IThemeSpecific"
+      menu="plone_displayviews"
+      title="Frontpage View"
+      action="@@frontpage-view"
+      description="This View is displaying the Frontpage"
+      />
+
+  <browser:page
+      layer=".interfaces.IThemeSpecific"
+      for="plone.portlets.interfaces.ILocalPortletAssignable"
+      class="plone.app.portlets.browser.manage.ManageContextualPortlets"
+      name="manage-frontpage-portlets"
+      template="templates/manageFrontPagePortlets.pt"
+      permission="plone.app.portlets.ManagePortlets"
+  /> 
+
+</configure>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<contentrules>
+ <rule name="rule-1" title="Benachrichtigung der Redakteure"
+    description="Die Redakteure werden benachrichtigt, wenn ein bereits veröffentlichter Artikel verändert wird. Hintergrund: Die Redaktion soll über Änderungen an veröffentlichten Anbietereinträgen und Referenzen informiert werden.  "
+    enabled="True" event="zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+    stop-after="False">
+  <conditions>
+   <condition type="plone.conditions.WorkflowState">
+    <property name="wf_states">
+     <element>published</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Mail">
+    <property name="source"/>
+    <property name="message">Der folgende Artikel wurde verändert:
+     
+     ${title}
+     
+     ${url}</property>
+    <property name="recipients">email@dzug.org</property>
+    <property name="subject">Artikel geändert: ${url}</property>
+   </action>
+  </actions>
+ </rule>
+ <rule name="rule-2" title="Submit for Review" description="" enabled="True"
+    event="Products.CMFCore.interfaces.IActionSucceededEvent"
+    stop-after="False">
+  <conditions>
+   <condition type="plone.conditions.WorkflowTransition">
+    <property name="wf_transitions">
+     <element>submit</element>
+    </property>
+   </condition>
+  </conditions>
+  <actions>
+   <action type="plone.actions.Mail">
+    <property name="source"/>
+    <property name="message">URL:
+     ${url}
+     
+     Titel: 
+     ${title}
+     
+     wurde zur Review eingereicht
+     </property>
+    <property name="recipients">email@dzug.org</property>
+    <property name="subject">Review notwendig: ${url}</property>
+   </action>
+  </actions>
+ </rule>
+ <assignment name="rule-2" bubbles="True" enabled="True" location=""/>
+ <assignment name="rule-1" bubbles="True" enabled="True" location=""/>
+ <assignment name="rule-1" bubbles="True" enabled="True" location="/old"/>
+ <assignment name="rule-2" bubbles="True" enabled="True" location="/old"/>
+</contentrules>

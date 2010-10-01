@@ -1,0 +1,57 @@
+<dl class="portlet portletRss"
+    i18n:domain="plone"
+    >
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+
+	<a tal:attributes="href python: view.url">
+	    <span class="portlet_rss_link"></span>
+	</a>
+        <a href=""
+           tal:attributes="href view/siteurl"
+           tal:content="view/title"
+           class="tile">
+            Tags
+        </a>
+        <span class="portletTopRight"></span>
+    </dt>
+    <tal:rss tal:condition="view/feedAvailable"
+                tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+			    desc_length view/site_properties/site_properties/search_results_description_length;
+                 	    desc_ellipsis view/site_properties/site_properties/ellipsis;"
+                tal:repeat="item view/items">
+        <dd class="portletItem oddrow" 
+            tal:define="oddrow repeat/item/odd"
+            tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+ 
+	    <div class="portletItemTitle" tal:content="item/title">
+                    Title
+            </div>
+	    <div class="portletItemDescription">
+		<div tal:replace="structure python:view.cropText(item['summary'], desc_length, desc_ellipsis)">
+                    description
+		</div>
+            </div>
+            <a href="#"
+                tal:attributes="href string:${item/url}"
+                class="portletItemMore"
+		i18n:translate="rss_more_link">Blog Besuchen
+		
+              <!--  <span class="portletItemDetails" 
+                      tal:condition="exists:item/updated">
+                      <span tal:omit-tag="" tal:content="python:toLocalizedTime(item['updated'])">19.02.2007</span>
+                </span>-->
+            </a>
+        </dd>
+    </tal:rss>
+ <!--   <dd class="portletFooter" tal:condition="view/feedAvailable">
+        <a href=""
+           tal:attributes="href view/siteurl"
+           i18n:translate="box_morelink">
+                More&hellip;
+        </a>
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>-->
+</dl>

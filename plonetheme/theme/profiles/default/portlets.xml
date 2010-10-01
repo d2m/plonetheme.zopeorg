@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<portlets> 
+ <portletmanager 
+   name="zope_de.pagePortlets"
+   type="plonetheme.zopeorg.browser.interfaces.IPagePortlets"
+ />
+
+ <portlet
+   addview="portlets.rss"
+   extend=""
+   >
+   <for interface="plonetheme.zopeorg.browser.interfaces.IPagePortlets" />
+ </portlet>
+
+<portlet
+   addview="portlets.News"
+   extend=""
+   >
+   <for interface="plonetheme.zopeorg.browser.interfaces.IPagePortlets" />
+ </portlet>
+  
+ <portlet
+   addview="portlets.Events"
+   extend=""
+   >
+   <for interface="plonetheme.zopeorg.browser.interfaces.IPagePortlets" />
+ </portlet>
+</portlets>
+

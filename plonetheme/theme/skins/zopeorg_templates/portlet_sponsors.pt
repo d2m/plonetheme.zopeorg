@@ -1,0 +1,17 @@
+<metal:div metal:define-macro="portlet">
+
+  <dl class="portlet">
+    <dt class="portletHeader">
+      <span>Sponsoren</span>
+    </dt>
+  </dl>
+  <div style="text-align: center" >
+      <a href="http://www.syslab.com">
+          <img src="logo-syslab.png" alt="sylab"/>
+      </a>
+  </div>
+
+  <img src="sponsoren2010.png" usemap="#imgmap2010729183012"/>
+  <map id="imgmap2010729183012" name="imgmap2010729183012"><area shape="rect" alt="" title="" coords="36,1,244,80" href="http://www.gfu.net" target="" /><area shape="rect" alt="" title="" coords="75,87,204,194" href="http://www.zopyxgroup.com" target="" /><area shape="rect" alt="" title="" coords="23,205,252,248" href="http://gocept.com" target="" /><area shape="rect" alt="" title="" coords="4,257,136,317" href="http://infrae.com" target="" /><area shape="rect" alt="" title="" coords="150,258,270,315" href="http://zetwork.de" target="" /><!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) --></map>
+    
+</metal:div>

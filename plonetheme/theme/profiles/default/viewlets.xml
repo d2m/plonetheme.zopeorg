@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<object>
+
+	<hidden manager="plone.portaltop" skinname="Zope.de Theme">
+		<viewlet name="plone.personal_bar" />
+		<viewlet name="plone.path_bar" />
+
+	</hidden>
+
+	<hidden manager="plone.portalheader" skinname="Zope.de Theme">
+		<viewlet name="plone.searchbox" />
+	</hidden>
+	
+	<hidden manager="plone.portalfooter" skinname="Zope.de Theme">
+		<viewlet name="plone.colophon" />
+		<viewlet name="plone.footer" />
+	</hidden>
+
+	<order manager="plone.portalheader" skinname="Zope.de Theme" based-on="Plone Default">
+		<viewlet name="zope_de.searchbox" insert-after="plone.logo"/>
+		
+	</order>
+
+	<order manager="plone.portaltop" skinname="Zope.de Theme" based-on="Plone Default">
+		<viewlet name="zope_de.path_bar" insert-after="plone.path_bar"/>
+		
+	</order>
+
+	<hidden manager="plone.belowcontenttitle" skinname="Zope.de Theme">
+		<viewlet name="collective.easyslider"/>
+		
+	</hidden>
+
+	<hidden manager="plone.belowcontentbody" skinname="Zope.de Theme">
+		<viewlet name="plone.abovecontenttitle.documentactions"/>
+		
+	</hidden>
+
+
+</object>
