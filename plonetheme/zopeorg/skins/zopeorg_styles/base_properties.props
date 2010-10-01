@@ -1,6 +1,6 @@
-title:string=Zope.de Theme's color, font, logo and border defaults
+title:string=zope.org theme's color, font, logo and border defaults
 
-plone_skin:string=Zope.de Theme
+plone_skin:string=zope.org theme
 
 logoName:string=zope_logo.gif
 

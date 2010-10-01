@@ -3,7 +3,7 @@
   <import-step id="plonetheme.zopeorg.various"
                version="20091023-01"
                handler="plonetheme.zopeorg.setuphandlers.setupVarious"
-               title="Zope.de Theme: miscellaneous import steps">
+               title="zope.org theme: miscellaneous import steps">
     <dependency step="skins" />
     Various import steps that are not handled by GS import/export
     handlers.

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
-   default_skin="Zope.de Theme">
+   default_skin="zope.org theme">
 
  <object name="zopeorg_images"
     meta_type="Filesystem Directory View"
@@ -12,7 +12,7 @@
     meta_type="Filesystem Directory View"
     directory="plonetheme.zopeorg:skins/zopeorg_styles"/>
 
- <skin-path name="Zope.de Theme" based-on="Plone Default">
+ <skin-path name="zope.org theme" based-on="Plone Default">
   <layer name="zopeorg_images"
      insert-after="custom"/>
   <layer name="zopeorg_templates"

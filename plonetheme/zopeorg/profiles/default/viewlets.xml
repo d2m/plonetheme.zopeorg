@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 <object>
 
-	<hidden manager="plone.portaltop" skinname="Zope.de Theme">
+	<hidden manager="plone.portaltop" skinname="zope.org theme">
 		<viewlet name="plone.personal_bar" />
 		<viewlet name="plone.path_bar" />
 
 	</hidden>
 
-	<hidden manager="plone.portalheader" skinname="Zope.de Theme">
+	<hidden manager="plone.portalheader" skinname="zope.org theme">
 		<viewlet name="plone.searchbox" />
 	</hidden>
 	
-	<hidden manager="plone.portalfooter" skinname="Zope.de Theme">
+	<hidden manager="plone.portalfooter" skinname="zope.org theme">
 		<viewlet name="plone.colophon" />
 		<viewlet name="plone.footer" />
 	</hidden>
 
-	<order manager="plone.portalheader" skinname="Zope.de Theme" based-on="Plone Default">
+	<order manager="plone.portalheader" skinname="zope.org theme" based-on="Plone Default">
 		<viewlet name="zope_de.searchbox" insert-after="plone.logo"/>
 		
 	</order>
 
-	<order manager="plone.portaltop" skinname="Zope.de Theme" based-on="Plone Default">
+	<order manager="plone.portaltop" skinname="zope.org theme" based-on="Plone Default">
 		<viewlet name="zope_de.path_bar" insert-after="plone.path_bar"/>
 		
 	</order>
 
-	<hidden manager="plone.belowcontenttitle" skinname="Zope.de Theme">
+	<hidden manager="plone.belowcontenttitle" skinname="zope.org theme">
 		<viewlet name="collective.easyslider"/>
 		
 	</hidden>
 
-	<hidden manager="plone.belowcontentbody" skinname="Zope.de Theme">
+	<hidden manager="plone.belowcontentbody" skinname="zope.org theme">
 		<viewlet name="plone.abovecontenttitle.documentactions"/>
 		
 	</hidden>

@@ -5,9 +5,9 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Zope.de Theme"
+      title="www.zope.org theme"
       directory="profiles/default"
-      description='Extension profile for the "Zope.de Theme" Plone theme.'
+      description='Extension profile for the "www.zope.org theme" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
