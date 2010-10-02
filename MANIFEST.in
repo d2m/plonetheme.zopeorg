@@ -1,2 +1,2 @@
-recursive-include dzug *
+recursive-include plonetheme *
 global-exclude *pyc
