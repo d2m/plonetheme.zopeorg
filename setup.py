@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='plonetheme.zopeorg',
       version=version,
-      description="This is the theme for zope.de",
+      description="Plone theme for www.zope.org",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
@@ -15,7 +15,7 @@ setup(name='plonetheme.zopeorg',
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='web zope plone theme',
-      author='Jan Filip Tristan Hasecke',
+      author='Jan Filip Tristan Hasecke (Plone Theme), Kai Mertens (Design)',
       author_email='filip.hasecke@googlemail.com',
       url='http://svn.plone.org/svn/collective/',
       license='CC Attribution-NonCommercial-ShareALike license',
