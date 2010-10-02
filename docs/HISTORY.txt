@@ -1,24 +1,8 @@
 Changelog
 =========
 
-20100719_11-02-06 - Bilder aktualisiert - acsr
-./plonetheme.zopeorg/dzug/theme/browser/images/feeter_bg.jpg
-wurde bisher noch nicht aus Tracker Ÿbernommen.
-
-ToDo: Buildout updaten auf Life site! Testen iPad -> acsr
-
-Updated to revision 149.
-
-
-2010-07-13 18:28:48 - History update als Commit Test
-JPEG files were reencoded to fix display distort in 1px width gradients on iPad. - acsr, done by aj in rev. 146
-./plonetheme.zopeorg/dzug/theme/browser/images/body_bg.jpg (already updated by aj)
-
-Updated to revision 148.
-
-
-1.0 - Unreleased
+1.0 (unreleased)
 ----------------
 
-* Initial release
-
+* import of dzug.theme from Gocept repository and
+  renamed to plonetheme.zopeorg
