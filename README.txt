@@ -7,10 +7,10 @@ It is based on the dzug.theme as used for www.zope.de.
 Contributors
 ------------
 
-* Kai Mertens (Design)
-* Jan Filip Tristan Hasecke (Plone theme)
-* Michael Haubenwaller 
 * Andreas Jung (Lead) 
+* Johannes Raggam 
+* Kai Mertens (Design)
+* Michael Haubenwaller
 
 License
 -------
