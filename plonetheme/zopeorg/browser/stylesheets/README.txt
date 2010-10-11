@@ -10,7 +10,7 @@ Its declaration is located in 'browser/configure.zcml':
     <browser:resourceDirectory
         name="plonetheme.zopeorg.stylesheets"
         directory="stylesheets"
-        layer=".interfaces.IThemeSpecific"
+        layer=".interfaces.IZopeorgTheme"
         />
 
 A stylesheet placed in this directory (e.g. 'main.css') can be accessed from
@@ -29,7 +29,7 @@ A Zope 3 browser resource declared like this in 'browser/configure.zcml':
     <browser:resource
         name="main.css"
         file="stylesheets/main.css"
-        layer=".interfaces.IThemeSpecific"
+        layer=".interfaces.IZopeorgTheme"
         />
 
 can be accessed from this relative URL:
