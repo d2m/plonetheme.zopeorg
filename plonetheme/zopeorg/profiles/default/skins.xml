@@ -1,18 +1,10 @@
 <?xml version="1.0"?>
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
     default_skin="zopeorg_theme">
-  <object name="zopeorg_images"
+  <object name="zopeorg"
       meta_type="Filesystem Directory View"
-      directory="plonetheme.zopeorg:skins/zopeorg_images"/>
-  <object name="zopeorg_templates"
-      meta_type="Filesystem Directory View"
-      directory="plonetheme.zopeorg:skins/zopeorg_templates"/>
-  <object name="zopeorg_styles"
-      meta_type="Filesystem Directory View"
-      directory="plonetheme.zopeorg:skins/zopeorg_styles"/>
+      directory="plonetheme.zopeorg:skins/zopeorg"/>
   <skin-path name="zopeorg_theme" based-on="Sunburst Theme">
-    <layer name="zopeorg_images" insert-after="custom"/>
-    <layer name="zopeorg_templates" insert-after="zopeorg_images"/>
-    <layer name="zopeorg_styles" insert-after="zopeorg_templates"/>
+    <layer name="zopeorg" insert-after="custom"/>
    </skin-path>
 </object>

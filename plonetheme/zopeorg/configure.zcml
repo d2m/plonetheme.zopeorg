@@ -6,9 +6,7 @@
 
   <include package=".browser" />
 
-  <cmf:registerDirectory name="zopeorg_images"/>
-  <cmf:registerDirectory name="zopeorg_templates"/>
-  <cmf:registerDirectory name="zopeorg_styles"/>
+  <cmf:registerDirectory name="zopeorg"/>
 
   <genericsetup:registerProfile
       name="default"
