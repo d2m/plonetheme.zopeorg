@@ -34,14 +34,6 @@
       />
 
  <browser:viewlet
-      name="zope_de.path_bar"
-      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-      layer=".interfaces.IThemeSpecific"
-      class=".path_bar.PathBarViewlet"
-      permission="zope2.View"
-      />
-
- <browser:viewlet
       name="zope_de.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
       layer=".interfaces.IThemeSpecific"
