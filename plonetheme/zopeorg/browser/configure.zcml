@@ -4,38 +4,31 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plonetheme.zopeorg">
 
-  <!-- 'zope.org theme' Zope 3 browser layer -->
-  <interface
-      interface=".interfaces.IThemeSpecific"
-      type="zope.publisher.interfaces.browser.IBrowserSkinType"
-      name="zope.org theme"
-      />
-
   <include package="plone.app.contentmenu" />
   <include package="plone.app.portlets" />
 
   <!-- Viewlets registration -->
   <!-- Zope 3 browser resources -->
 
-  <!-- Resource directory for images -->
+  <!-- Resource directory registrations -->
   <browser:resourceDirectory
       name="plonetheme.zopeorg.images"
       directory="images"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       />
-
-  <!-- Resource directory for stylesheets -->
   <browser:resourceDirectory
       name="plonetheme.zopeorg.stylesheets"
       directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       />
 
+
+  <!-- Viewlet registrations -->
  <browser:viewlet
-      name="zope_de.footer"
+      name="zopeorg.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
-      layer=".interfaces.IThemeSpecific"
-      class=".footer.FooterViewlet"
+      layer=".interfaces.IZopeorgTheme"
+      class=".common.FooterViewlet"
       permission="zope2.View"
       />
 
@@ -45,12 +38,12 @@
       name="page_portlets"
       class=".portletview.PagePortletView"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       />
 
   <browser:menuItem
       for="*"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       menu="plone_displayviews"
       title="Page Portlets"
       action="@@page_portlets"
@@ -58,7 +51,7 @@
       />
 
   <browser:page
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       for="plone.portlets.interfaces.ILocalPortletAssignable"
       class="plone.app.portlets.browser.manage.ManageContextualPortlets"
       name="manage-page-portlets"
@@ -68,20 +61,20 @@
 
   <plone:portletRenderer
       portlet="plone.app.portlets.portlets.news.INewsPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/news.pt"
       />
 
 
   <plone:portletRenderer
       portlet="plone.app.portlets.portlets.events.IEventsPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/events.pt"
       />
 
   <plone:portletRenderer
       portlet="plone.app.portlets.portlets.rss.IRSSPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       class=".rss_renderer.RSSRenderer"
       />
 
@@ -89,7 +82,7 @@
   <plone:portletRenderer
       for=".interfaces.IFrontPage"
       portlet="plone.app.portlets.portlets.news.INewsPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/short-news.pt"
       />
 
@@ -97,14 +90,14 @@
   <plone:portletRenderer
       for=".interfaces.IFrontPage"
       portlet="plone.app.portlets.portlets.events.IEventsPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/short-events.pt"
       />
 
   <plone:portletRenderer
       for=".interfaces.IFrontPage"
       portlet="plone.app.portlets.portlets.rss.IRSSPortlet"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/short-rss.pt"
       />
 
@@ -113,7 +106,7 @@
       name="collective.easyslider"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
       class="collective.easyslider.browser.viewlet.EasySlider"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       permission="zope2.View"
       />
 
@@ -121,7 +114,7 @@
       for=".interfaces.IFrontPage"
       name="zope_de.front_images"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       template="templates/front-images.pt"
       permission="zope2.View"
       />
@@ -131,12 +124,12 @@
       name="frontpage-view"
       class=".frontpage.FrontPageView"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       />
 
   <browser:menuItem
       for="*"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       menu="plone_displayviews"
       title="Frontpage View"
       action="@@frontpage-view"
@@ -144,7 +137,7 @@
       />
 
   <browser:page
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZopeorgTheme"
       for="plone.portlets.interfaces.ILocalPortletAssignable"
       class="plone.app.portlets.browser.manage.ManageContextualPortlets"
       name="manage-frontpage-portlets"
