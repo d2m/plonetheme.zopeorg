@@ -1,0 +1,11 @@
+bin
+dev
+develop-eggs
+eggs
+parts
+src
+*.egg-info
+.*
+*.pyc
+*.wpr
+!.gitignore
