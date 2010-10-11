@@ -33,15 +33,6 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-  <browser:viewlet
-      name="zope_de.searchbox"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      layer=".interfaces.IThemeSpecific"
-      class=".searchbox.SearchBoxViewlet"
-      permission="zope2.View"
-      />
-
-
  <browser:viewlet
       name="zope_de.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
@@ -90,7 +81,7 @@
       layer=".interfaces.IThemeSpecific"
       template="templates/news.pt"
       />
-  
+
 
   <plone:portletRenderer
       portlet="plone.app.portlets.portlets.events.IEventsPortlet"
@@ -103,7 +94,7 @@
       layer=".interfaces.IThemeSpecific"
       class=".rss_renderer.RSSRenderer"
       />
- 
+
 
   <plone:portletRenderer
       for=".interfaces.IFrontPage"
@@ -111,7 +102,7 @@
       layer=".interfaces.IThemeSpecific"
       template="templates/short-news.pt"
       />
-  
+
 
   <plone:portletRenderer
       for=".interfaces.IFrontPage"
@@ -133,7 +124,7 @@
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
       class="collective.easyslider.browser.viewlet.EasySlider"
       layer=".interfaces.IThemeSpecific"
-      permission="zope2.View" 
+      permission="zope2.View"
       />
 
   <browser:viewlet
@@ -169,6 +160,6 @@
       name="manage-frontpage-portlets"
       template="templates/manageFrontPagePortlets.pt"
       permission="plone.app.portlets.ManagePortlets"
-  /> 
+  />
 
 </configure>
