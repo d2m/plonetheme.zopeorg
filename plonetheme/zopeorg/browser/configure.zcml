@@ -91,7 +91,7 @@
   <browser:page
       for="*"
       name="page_portlets"
-      class=".portletview.PagePortletView"
+      template="templates/pageportlets.pt"
       layer=".interfaces.IZopeorgTheme"
       permission="zope2.View"
       />
