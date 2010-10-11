@@ -8,16 +8,16 @@ setup(name='plonetheme.zopeorg',
       description="Plone theme for www.zope.org",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+      # Get more strings from http://www.python.org/pypi?:action=list_classifiers
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
       keywords='web zope plone theme',
-      author='Jan Filip Tristan Hasecke (Plone Theme), Kai Mertens (Design)',
-      author_email='filip.hasecke@googlemail.com',
-      url='http://svn.plone.org/svn/collective/',
+      author='Zope Foundation and Contributors',
+      author_email='',
+      url='http://svn.zope.org/plonetheme.zopeorg/trunk/',
       license='CC Attribution-NonCommercial-ShareALike license',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['plonetheme'],
@@ -25,17 +25,6 @@ setup(name='plonetheme.zopeorg',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.easyslider',
           # -*- Extra requirements: -*-
       ],
-      entry_points="""
-      # -*- Entry points: -*-
-
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
-
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
-      """,
-      paster_plugins = ["ZopeSkel"],
       )
