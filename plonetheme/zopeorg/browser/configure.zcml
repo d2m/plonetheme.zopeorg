@@ -103,14 +103,6 @@
 
 
   <browser:viewlet
-      name="collective.easyslider"
-      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-      class="collective.easyslider.browser.viewlet.EasySlider"
-      layer=".interfaces.IZopeorgTheme"
-      permission="zope2.View"
-      />
-
-  <browser:viewlet
       for=".interfaces.IFrontPage"
       name="zope_de.front_images"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
