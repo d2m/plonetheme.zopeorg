@@ -4,9 +4,6 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="plonetheme.zopeorg">
 
-  <include package="plone.app.contentmenu" />
-  <include package="plone.app.portlets" />
-
   <!-- Resource directory registrations -->
   <browser:resourceDirectory
       name="plonetheme.zopeorg.images"
