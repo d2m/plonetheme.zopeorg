@@ -13,8 +13,6 @@
 
   <include package="plone.app.contentmenu" />
   <include package="plone.app.portlets" />
-  <include package="collective.easyslider" />
-
 
   <!-- Viewlets registration -->
   <!-- Zope 3 browser resources -->
