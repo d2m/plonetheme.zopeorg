@@ -93,11 +93,8 @@ fieldset {
 	margin: 0px;
 }
 
-#portal-header {
-	}
-#portal-logo{
-	float:left;
-	padding:30px 0 34px;
+#portal-logo {
+    padding-bottom:32px;
 }
 #portal-logo img {
 	border:0 none;
@@ -150,7 +147,7 @@ fieldset {
 }
 
 #portal-globalnav{
-	float:left;
+	background:none;
 	margin: 0;
 	padding: 0;
 }
@@ -161,6 +158,7 @@ fieldset {
 }
 #portal-globalnav li a{
 	color:#FFFFFF;
+	background:none;
 	display:block;
 	font-size:15px;
 	font-weight:bold;
@@ -171,7 +169,8 @@ fieldset {
 	color:#C0E0FC;
 	text-decoration:none;
 }
-#portal-globalnav li.selected a  {
+#portal-globalnav .selected a ,
+#portal-globalnav .selected a:hover {
 	background-image:url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
 	background-position:center bottom;
 	background-repeat:no-repeat;
@@ -182,11 +181,13 @@ fieldset {
 	padding:14px 0 15px;
 	text-decoration:none;
 }
+#portal-globalnav .selected a,
+#portal-globalnav .selected a:hover,
+#portal-globalnav a:hover {
+    background-color:transparent;
+}
 
-
-#portal-searchbox{
-	clear: both;
-	float:right;
+#portal-searchbox {
 	padding-top:6px;
 	text-align:right;
 	width:200px;
