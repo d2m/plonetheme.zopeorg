@@ -1,4 +1,4 @@
-/* Stylesheet for the 'Zope.de Theme' Plone theme */
+/* styles for zope.org */
 
 a {
 	color: #bd4265;
@@ -24,7 +24,7 @@ h2 {
 	font-size: 16px;
 	font-weight: bold;
 	color: rgb(35, 117, 187);
-} 
+}
 h3 {
 	font-size: 14px;
 	font-weight: normal;
@@ -291,24 +291,29 @@ input.searchButton {
 #portal-column-one {
 	background-image:url(++resource++plonetheme.zopeorg.images/left_coloumn.jpg);
 	background-repeat:no-repeat;
-	float:left;
 	padding:10px 20px 20px 20px;
 	width:280px;
 }
 
 #portal-column-content{
 	background:transparent url(++resource++plonetheme.zopeorg.images/div80_bg.jpg) no-repeat scroll left top;
-	float:right;
 	padding:20px;
 	width:610px;
 	padding-top:10px;
 }
+
+/* grid layout hacks */
+/* TODO: adapt grid layout patterns and best practices */
+position-1:4{
+	margin-left:-68%;
+}
+
 body.kupu{
 	background: transparent;
 }
 
 .portletHeader{
-	background: transparent url(++resource++plonetheme.zopeorg.images/line.gif) repeat-x 0px 22px;	
+	background: transparent url(++resource++plonetheme.zopeorg.images/line.gif) repeat-x 0px 22px;
 	color:#2375BB;
 	font-size:14px;
 	font-style:italic;
@@ -341,8 +346,8 @@ body.kupu{
 
 .navTreeItem a:hover, dd.portletItem .navTreeItem a:hover {
 	background-color:transparent;
-	border:0px solid #8CACBB;	
-	
+	border:0px solid #8CACBB;
+
 }
 .navTreeItem a, dd.portletItem .navTreeItem a {
 	border:0px solid White;
@@ -518,7 +523,7 @@ body.kupu{
 	line-height:20px;
 	margin-top:-1px;
 	padding: 0px 0px 8px;
-	
+
 }
 
 .navTreeItem div{
