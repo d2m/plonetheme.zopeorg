@@ -26,5 +26,6 @@ setup(name='plonetheme.zopeorg',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'Products.Collage',
       ],
       )
