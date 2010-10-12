@@ -4,6 +4,7 @@
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="plonetheme.zopeorg">
 
+  <include package="Products.Collage" />
   <include package=".browser" />
 
   <cmf:registerDirectory name="zopeorg"/>
