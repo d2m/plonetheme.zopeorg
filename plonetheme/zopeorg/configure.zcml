@@ -5,15 +5,20 @@
     i18n_domain="plonetheme.zopeorg">
 
   <include package="Products.Collage" />
+  <include package="collective.collage.portlets" />
+  <include package="collective.easyslider" />
+  <include package="collective.collage.easyslider" />
+  <include package="Products.PloneSoftwareCenter" />
+
   <include package=".browser" />
 
   <cmf:registerDirectory name="zopeorg"/>
 
   <genericsetup:registerProfile
       name="default"
-      title="zope.org Plone theme"
+      title="plonetheme.zopeorg: default"
       directory="profiles/default"
-      description='Extension profile for the zope.org Plone theme.'
+      description='plonetheme.zopeorg default profile.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
