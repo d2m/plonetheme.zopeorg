@@ -412,11 +412,13 @@ body.kupu{
 	border-bottom:3px solid #5C5C5C;
 	border-top:1px solid #E3E3E3;
 	color:#E3E3E3;
+	padding:0px 20px;
 }
 #portal-feeter-wrapper{
 	margin: 0pt auto;
-	padding: 0;
-	width: 940px;
+	padding: 0px;
+	width:980px;
+	clear:both;
 }
 
 
