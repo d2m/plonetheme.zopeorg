@@ -3,8 +3,12 @@
 	<hidden manager="plone.portalfooter" skinname="zopeorg_theme">
 		<viewlet name="plone.colophon" />
 		<viewlet name="plone.footer" />
+		<viewlet name="plone.site_actions" />
 	</hidden>
 	<order manager="plone.portaltop" skinname="zopeorg_theme">
 		<viewlet name="zope_de.path_bar" insert-before="*"/>
+	</order>
+	<order manager="plone.portalheader" skinname="zopeorg_theme" purge="True">
+	    <viewlet name="zopeorg.site_actions" insert-before="personal_bar"/>
 	</order>
 </object>
