@@ -6,9 +6,6 @@
 
   <include package="Products.Collage" />
   <include package="collective.collage.portlets" />
-  <!-- include package="collective.easyslider" />
-  <include package="collective.collage.easyslider" />
-  <include package="Products.PloneSoftwareCenter" /-->
 
   <include package=".browser" />
 

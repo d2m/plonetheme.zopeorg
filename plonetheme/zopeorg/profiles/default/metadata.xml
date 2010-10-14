@@ -4,8 +4,5 @@
   <dependencies>
     <dependency>profile-Products.Collage:default</dependency>
     <dependency>profile-collective.collage.portlets:install</dependency>
-    <!-- dependency>profile-collective.easyslider:default</dependency>
-    <dependency>profile-collective.collage.easyslider:default</dependency>
-    <dependency>profile-Products.PloneSoftwareCenter:default</dependency -->
   </dependencies>
 </metadata>

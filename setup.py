@@ -28,8 +28,6 @@ setup(name='plonetheme.zopeorg',
           # -*- Extra requirements: -*-
           'Products.Collage',
           'collective.collage.portlets',
-          #'collective.easyslider',
-          #'collective.collage.easyslider',
-          #'Products.PloneSoftwareCenter',
+          'collective.setuphandlertools',
       ],
       )
