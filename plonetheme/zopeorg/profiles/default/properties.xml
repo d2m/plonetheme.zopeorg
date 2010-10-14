@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<site>
+ <property name="title">Zope.org</property>
+ <property name="description"></property>
+ <property name="email_from_address" type="string">webmaster@zope.org</property>
+ <property name="email_from_name" type="string">Zope.org Webmaster</property>
+</site>
