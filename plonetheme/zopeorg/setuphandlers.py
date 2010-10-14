@@ -15,7 +15,7 @@ logger = logging.getLogger(PACKAGENAME)
 
 def setup_content(context):
     sht = SetupHandlerTools(context, PACKAGENAME, globals())
-    if sht.isNotThisProfile('zopeorg.buildout_default.txt'): return
+    if sht.isNotThisProfile('plonetheme.zopeorg_setup_content.txt'): return
 
     site = context.getSite()
     wft = getToolByName(site, 'portal_workflow')
