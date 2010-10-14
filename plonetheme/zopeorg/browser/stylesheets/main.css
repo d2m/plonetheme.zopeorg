@@ -94,12 +94,15 @@ fieldset {
 }
 
 #portal-logo {
-    padding-top:22px;
+    margin-top:32px;
+	margin-bottom:32px;
+	height:56px;
 }
-#portal-logo img {
-	border:0 none;
-	margin:0;
-	padding:0;
+
+#portal-personaltools-wrapper{
+	padding:11px 0;
+	text-align:right;
+	float:right;
 }
 
 #portal-siteactions {
@@ -148,7 +151,6 @@ fieldset {
 
 #portal-globalnav{
 	background:none;
-	margin: -52px 0px 0px;
 	padding: 0;
 	clear: both;
 	float: left;
@@ -191,7 +193,8 @@ fieldset {
 }
 
 #portal-searchbox {
-	padding-top:96px;
+	margin-top:8px;
+	margin-bottom:0;
 	text-align:right;
 	width:200px;
 }
@@ -284,9 +287,6 @@ input.searchButton {
 	text-decoration:none;
 }
 
-#portal-personaltools-wrapper{
-	clear:both;
-}
 
 .documentEditable .documentContent {
 	background:transparent none repeat scroll 0 0;
