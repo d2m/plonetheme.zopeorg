@@ -316,7 +316,7 @@ manages the infrastructure for open source collaboration.</p>
          ]},
 
         {'type': 'Document', 'title': u'Legal', 'id': u'legal',
-         'opts': {},
+         'opts': {'setExcludeFromNav': True},
          'data': {'description':u"""Zope.org Legal Notice.""",
                   'text':
 u"""<p>All materials found on this web site are the property of Zope Corporation and all rights are reserved. The information contained in and on the various pages of the Zope Corporation web site have been issued for general distribution under the protection of United States copyright laws. In addition to US copyright laws, the information presented on Zope Corporation web site is protected under the Berne Convention for the Protection of Literature and Artistic works, as well as under other international conventions and under national laws on copyright and neighboring rights.</p>
@@ -324,7 +324,6 @@ u"""<p>All materials found on this web site are the property of Zope Corporation
 <p>Any mention of specific companies or of certain manufacturers' products on Zope Corporation's web site does not imply that they are endorsed or recommended by Zope Corporation in preference to others of a similar nature that are not mentioned. Errors and omissions excepted, the names of proprietary products are distinguished by initial capital letters.</p>
 <p>Zope Corporation does not warrant that the information contained in the web site is complete and correct and shall not be liable whatsoever for any damages incurred as a result of its use.</p>
 <p>For further inquiry, please contact <a href="mailto:legal@zope.com">legal@zope.com</a>.</p>"""}},
-
 
     ]
     sht.create_item_runner(site, content_structure)
