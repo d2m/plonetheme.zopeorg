@@ -103,7 +103,8 @@ and presentation. Features include versioning, workflow system, integral visual
 editor, content reuse, sophisticated access control, multi-site management,
 extensive import/export facilities, fine-grained templating, and hi-res image
 storage and manipulation. Silva has an open source (BSD) license.</p>
-</p><p><a href=""></a></p>"""}},
+</p>
+<p>The Silva Content Management System: <a href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>"""}},
                   ]},
 ###
              {'type': 'Folder', 'title': u'Databases',
@@ -123,7 +124,7 @@ transactions, scalability, and more.</p>
               'childs': [
 
               {'type': 'Document', 'title': u'Buildout',
-              'data': {'description':u"""""",
+              'data': {'description':u"""Software build system for repeatable deployments.""",
                        'text':
 u"""<p>Buildout is a Python-based build system for creating, assembling and
 deploying applications from multiple parts, some of which may be
@@ -181,7 +182,7 @@ meanwhile deprecated DTML language.</p>
 <p>Zope Page Templates: <a href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>"""}},
 
               {'type': 'Document', 'title': u'ZTK',
-              'data': {'description':u"""""",
+              'data': {'description':u"""The Zope Tool Kit libraries.""",
                        'text':
 u"""<p>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by
 projects to develop web applications or web frameworks. It is developed by the
@@ -211,7 +212,7 @@ u"""<p>Main Zope related mailing list collection: <a href="https://mail.zope.org
               'data': {'description':u"""Meet Zopistas in Internet Relay Chat channels""",
                        'text':
 u"""<p>freenode.net hosts lots of Zope and Zope products/application related
-IRC channels. Visit <a href="http://irc.freenode.net/">http://irc.freenode.net/</a>
+IRC channels. Visit <a href="http://irc.freenode.net/">irc.freenode.net</a>
 and try one of the following channels:</p>
 <ul>
 <li>#zope</li>
@@ -225,14 +226,14 @@ and try one of the following channels:</p>
              {'type': 'Document', 'title': u'Websites',
               'data': {'description':u"""Other Zope related websites""",
                        'text':
-u"""<p>German Zope website: <a href="http://www.zope.de/">http://www.zope.de/</a></p>"""}},
+u"""<p>German Zope website: <a href="http://zope.de/">zope.de</a></p>"""}},
 
              {'type': 'Document', 'title': u'Planets',
               'data': {'description':u"""News collections from differnt Zope related blogs.""",
                        'text':
-u"""<p>Planet Zope: <a href="http://planet.zope.org/">http://planet.zope.org/</a></p>
-<p>Planet Plone: <a href="http://planet.zope.org/">http://planet.plone.org/</a></p>
-<p>Planet Python: <a href="http://planet.zope.org/">http://planet.python.org/</a></p>"""}},
+u"""<p>Planet Zope: <a href="http://planet.zope.org/">planet.zope.org</a></p>
+<p>Planet Plone: <a href="http://planet.zope.org/">planet.plone.org</a></p>
+<p>Planet Python: <a href="http://planet.zope.org/">planet.python.org</a></p>"""}},
 
              {'type': 'Document', 'title': u'Google Wave',
               'data': {'description':u"""The next big thing in collaborative computing.""",
@@ -250,7 +251,7 @@ u"""<p>Visit Google Wave and get in touch with Zope developers and Users:#
                        'text':
 u"""<p>Zope public subversion repository provides read-only and selective write
 access to the source code for Zope's and related projects.<br />
-<a href="http://svn.zope.org/">http://svn.zope.org/</a></p>"""}},
+<a href="http://svn.zope.org/">svn.zope.org</a></p>"""}},
 
              {'type': 'Document', 'title': u'PyPI',
               'data': {'description':u"""Zope projects @ Python Package Index""",
@@ -269,13 +270,13 @@ work together on software projects. Launchpad is built with Zope 3.<br />
               'data': {'description':u"""Get documentation about Zope and it's tools here""",
                        'text':
 u"""<p>Hub site to Zope community documentation projects:
-<a href="http://docs.zope.org/">http://docs.zope.org/</a>.</p>"""}},
+<a href="http://docs.zope.org/">docs.zope.org</a>.</p>"""}},
 
              {'type': 'Document', 'title': u'Wiki',
               'data': {'description':u"""Community maintained documentation, scratchpad and further information.""",
                        'text':
 u"""<p>Hub site to Zope community wiki documentation:
-<a href="http://wiki.zope.org/">http://wiki.zope.org/</a>.</p>"""}},
+<a href="http://wiki.zope.org/">wiki.zope.org</a>.</p>"""}},
 
              {'type': 'Document', 'title': u'Books',
               'data': {'description':u"""Get Books about Zope for online and offline reading.""",
@@ -291,7 +292,7 @@ u"""<h2>Zope</h2>
              {'type': 'Document', 'title': u'Archive',
               'data': {'description':u"""Looking for the ancient Zope website? Visit old.zope.org.""",
                        'text':
-u"""<p>Old Zope website: <a href="http://old.zope.org/">http://old.zope.org/</a>.</p>"""}},
+u"""<p>Old Zope website: <a href="http://old.zope.org/">old.zope.org</a>.</p>"""}},
 
          ]},
 
@@ -310,7 +311,7 @@ Foundation is the copyright holder of the Zope software and many extensions and
 associated software. The Zope Foundation also manages the zope.org website, and
 manages the infrastructure for open source collaboration.</p>
 <p>For more information, visit:
-<a href="http://foundation.zope.org/">http://foundation.zope.org/</a>."""}},
+<a href="http://foundation.zope.org/">foundation.zope.org</a>."""}},
 
          ]},
 
