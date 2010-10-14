@@ -8,9 +8,9 @@
 	<order manager="plone.portalheader" skinname="zopeorg_theme" purge="True">
 	    <viewlet name="plone.skip_links" insert-before="*"/>
 		<viewlet name="plone.logo"/>
-		<viewlet name="zopeorg.site_actions"/>
 		<viewlet name="plone.personal_bar"/>
 		<viewlet name="plone.app.i18n.locales.languageselector"/>
+		<viewlet name="zopeorg.site_actions"/>
 		<viewlet name="plone.global_sections"/>
 		<viewlet name="plone.searchbox"/>
 	</order>
