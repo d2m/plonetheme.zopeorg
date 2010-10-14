@@ -19,4 +19,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="setup_content"
+      title="plonetheme.zopeorg: setup content"
+      directory="profiles/setup_content"
+      description='plonetheme.zopeorg initial content.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>
