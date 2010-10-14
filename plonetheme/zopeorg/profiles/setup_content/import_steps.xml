@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step
+    id="plonetheme.zopeorg-setup_content"
+    handler="plonetheme.zopeorg.setuphandlers.setup_content"
+    title="plonetheme.zopeorg setup_content"
+    version="1.0">
+  </import-step>
+</import-steps>
