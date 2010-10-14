@@ -83,14 +83,21 @@ fieldset {
     border: 1px solid #b0aeaf;
 }
 
+/*
 #visual-portal-wrapper {
 	margin:auto;
 	padding:0;
 	width:980px;
 }
+*/
 #portal-top {
 	padding: 0 20px;
-	margin: 0px;
+	margin:auto;
+	width:980px;
+}
+#portal-columns {
+	margin:auto;
+	width:980px;
 }
 
 #portal-logo {
