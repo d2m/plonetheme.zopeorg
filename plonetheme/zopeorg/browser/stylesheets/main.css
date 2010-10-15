@@ -95,7 +95,7 @@ fieldset {
 
 #portal-logo {
     margin-top:32px;
-	margin-bottom:32px;
+	margin-bottom:33px;
 	height:56px;
 }
 
@@ -177,14 +177,9 @@ fieldset {
 #portal-globalnav .selected a ,
 #portal-globalnav .selected a:hover {
 	background-image:url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
-	background-position:33% bottom;
+	background-position:50% bottom;
 	background-repeat:no-repeat;
 	color:#C0E0FC;
-	display:block;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 0 15px;
-	text-decoration:none;
 }
 #portal-globalnav .selected a,
 #portal-globalnav .selected a:hover,
@@ -193,18 +188,15 @@ fieldset {
 }
 
 #portal-searchbox {
-	margin-top:8px;
-	margin-bottom:0;
+	margin:7px 0 0;
 	text-align:right;
 	width:200px;
 }
-
 .LSBox {
 	background-image:url(++resource++plonetheme.zopeorg.images/search_bg.jpg);
 	background-position:right top;
 	background-repeat:no-repeat;
 	height:30px;
-	padding-top:5px;
 	text-align:left;
 }
 .LSBox .searchSection {
@@ -213,7 +205,7 @@ fieldset {
 #searchGadget {
 	background-color:transparent;
 	border:0 none;
-	margin:0 5px 0 30px;
+	margin:4px 5px 0 30px;
 	padding:3px;
 	width:135px;
 	color: #5A5A5A;
