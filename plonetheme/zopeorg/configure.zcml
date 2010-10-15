@@ -6,10 +6,13 @@
 
   <include package="Products.Collage" />
   <include package="collective.collage.portlets" />
+  <include package="archetypes.schemaextender" />
 
   <include package=".browser" />
-
   <cmf:registerDirectory name="zopeorg"/>
+
+  <adapter factory=".schemaextender.ImageExtender"
+           name="zopeorg_image_extender" />
 
   <genericsetup:registerProfile
       name="default"
