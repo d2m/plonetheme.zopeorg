@@ -20,7 +20,7 @@ from archetypes.schemaextender.interfaces import ISchemaExtender
 from Products.ATContentTypes.interfaces import IATImage
 
 
-class ImageField(ExtensionField, atapi.StringField):
+class StringFieldExtender(ExtensionField, atapi.StringField):
     pass
 
 class ImageExtender(object):
@@ -28,7 +28,7 @@ class ImageExtender(object):
     adapts(IATImage)
 
     fields = [
-        atapi.ImageField('teaser_url',
+        StringFieldExtender('teaser_url',
             required=False,
             searchable=False,
             accessor='teaser_url',
