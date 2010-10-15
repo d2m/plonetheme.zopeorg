@@ -1,0 +1,8 @@
+<tal:manager replace="structure provider:collage.ContentManager" />
+
+<div id="zopeorg_teaser">
+  <h1>TEST</h1>
+  <div class="teaser" tal:repeat="teaser view/get_teasers">
+    <h1>TEST 1</h1>
+  </div>
+</div>
