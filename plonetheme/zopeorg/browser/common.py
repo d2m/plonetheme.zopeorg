@@ -29,7 +29,8 @@ class CollageTeaserView(BrowserView):
         query['sort_on'] = 'getObjPositionInParent'
         # query['review_state'] = 'published'
         brains = cat(**query)
-        return [{'title':obj.Title(),
+        return [{'tag':obj.tag(),
+                 'title':obj.Title(),
                  'description':obj.Description(),
                  'url': getattr(obj, 'teaser_url', None),
                  'style': getattr(obj, 'teaser_style', None)
