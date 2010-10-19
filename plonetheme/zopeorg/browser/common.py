@@ -2,6 +2,8 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
 from Products.Five.browser import BrowserView
+from Products.CMFCore.utils import getToolByName
+
 
 from zope.interface import Interface
 
@@ -19,4 +21,17 @@ class CollageTeaserView(BrowserView):
 
     @property
     def get_teasers(self):
-        return []
+        cat = getToolByName(self.context, 'portal_catalog')
+        path =  '/'.join(self.context.getPhysicalPath())
+        query = {}
+        query['portal_type'] = 'Image'
+        query['path'] = {'query': path, 'depth':1}
+        query['sort_on'] = 'getObjPositionInParent'
+        # query['review_state'] = 'published'
+        brains = cat(**query)
+        # well, following is kinda pimping it up
+        return [{'title':obj.Title(),
+                 'description':obj.Description(),
+                 'url': getattr(obj, 'teaser_url', None),
+                 'style': (cnt>0 and 'display:none;' or '') + getattr(obj, 'teaser_style', '')
+                 } for cnt,obj in enumerate([obj.getObject() for obj in brains])]
