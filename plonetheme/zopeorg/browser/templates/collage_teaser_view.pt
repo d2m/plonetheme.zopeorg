@@ -1,8 +1,18 @@
 <tal:manager replace="structure provider:collage.ContentManager" />
 
 <div id="zopeorg_teaser">
-  <h1>TEST</h1>
-  <div class="teaser" tal:repeat="teaser view/get_teasers">
-    <h1>TEST 1</h1>
+  <tal:rep repeat="teaser view/get_teasers">
+  <div class="teaser"
+       tal:attributes="style python:repeat['teaser'].index>0 and 'display:none' or ''">
+       <a href=""
+          tal:omit-tag="not:teaser/url"
+          tal:attributes="href teaser/url;
+                          title teaser/title">
+           <tal:replace replace="structure teaser/tag" />
+           <p tal:condition="teaser/description"
+              tal:content="teaser/description"
+              tal:attributes="style teaser/style|nothing" />
+       </a>
   </div>
+  </tal:rep>
 </div>
