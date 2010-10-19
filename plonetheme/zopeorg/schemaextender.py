@@ -39,6 +39,16 @@ class ImageExtender(object):
                         label = _(u'label_teaser_url', default=u'Teaser URL')
                         )),
 
+        StringFieldExtender('teaser_style',
+            required=False,
+            searchable=False,
+            accessor='teaser_style',
+            widget = atapi.StringWidget(
+                        description = _(u'help_teaser_style',
+                                        default=u"ONLY FOR TEASER IMAGES: CSS styles used for the teaser text"),
+                        label = _(u'label_teaser_css', default=u'Teaser CSS style')
+                        )),
+
     ]
 
     def __init__(self, context): self.context = context
