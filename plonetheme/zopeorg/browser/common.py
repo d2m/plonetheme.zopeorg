@@ -21,6 +21,7 @@ class CollageTeaserView(BrowserView):
 
     @property
     def get_teasers(self):
+        #TODO: memoize me
         cat = getToolByName(self.context, 'portal_catalog')
         path =  '/'.join(self.context.getPhysicalPath())
         query = {}
