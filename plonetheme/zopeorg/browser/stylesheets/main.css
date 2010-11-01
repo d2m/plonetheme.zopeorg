@@ -394,22 +394,26 @@ body.kupu{
 .portletWrapper {
 }
 
-
+#visual-portal-wrapper {
+	clear: both;
+    margin: 0pt auto;
+    padding: 0px;
+    width: 980px;
+}
 
 #portal-feeter {
-	background-color:#6B6B6B;
-	background-image:url(++resource++plonetheme.zopeorg.images/feeter_bg.jpg);
-	background-repeat:repeat-x;
-	border-bottom:3px solid #5C5C5C;
-	border-top:1px solid #E3E3E3;
 	color:#E3E3E3;
 	padding:0px 20px;
+    margin: 0pt auto;
+    width:900px;
 }
 #portal-feeter-wrapper{
-	margin: 0pt auto;
-	padding: 0px;
-	width:980px;
-	clear:both;
+    border-top:1px solid #E3E3E3;
+    border-bottom:3px solid #5C5C5C;
+    clear:both;
+    background-color:#6B6B6B;
+    background-image:url(++resource++plonetheme.zopeorg.images/feeter_bg.jpg);
+    background-repeat:repeat-x;
 }
 
 
