@@ -37,22 +37,30 @@ def setup_content(context):
         {'type': 'Collage', 'title': u'Start', 'id': 'front-page',
          'data': { 'show_title': False, 'show_description': False, },
          'childs': [
-             {'type': 'CollageRow', 'title': '1', 'id': '1',
+             {'type': 'CollageRow', 'title': '', 'id': '1',
               'childs': [
-                  {'type': 'CollageColumn', 'title': '1', 'id': '1',
+                  {'type': 'CollageColumn', 'title': '', 'id': '1',
+                   'opts': {'setLayout':'collage_teaser_view',},
                    'childs': [
-                       {'type': 'Document', 'title': 'Teaser',
-                        'data': {'description':u'', 'text':"""<p></p>""",}
+                       {'type': 'Image', 'title': 'The World of Zope',
+                        'data': {'description':
+u"""Zope is a free and opensource web application server written in the object-oriented
+programming language "Python". Since its release in 1998 Zope continued to grow and
+evolved into many distinct applications, frameworks, libraries and tools.""",
+                        'image': sht.load_file('setupdata/teaser_world-of-zope-plain.jpg'),
+                        'teaser_url': u'http://zope.org/',
+                        'teaser_style': u'position: absolute; left: 480px; top: 180px; font-size: 12pt; color: white;',
+                                },
                         },
                        ],
                    },
                   ],
               },
-             {'type': 'CollageRow', 'title': '2', 'id': '2',
+             {'type': 'CollageRow', 'title': '', 'id': '2',
               'childs': [
-                  {'type': 'CollageColumn', 'title': '1', 'id': '1',},
-                  {'type': 'CollageColumn', 'title': '2', 'id': '2',},
-                  {'type': 'CollageColumn', 'title': '3', 'id': '3',},
+                  {'type': 'CollageColumn', 'title': '', 'id': '1',},
+                  {'type': 'CollageColumn', 'title': '', 'id': '2',},
+                  {'type': 'CollageColumn', 'title': '', 'id': '3',},
                   ],
               },
 
