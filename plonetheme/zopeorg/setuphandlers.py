@@ -40,7 +40,7 @@ def setup_content(context):
              {'type': 'CollageRow', 'title': '', 'id': '1',
               'childs': [
                   {'type': 'CollageColumn', 'title': '', 'id': '1',
-                   'opts': {'setLayout':'collage_teaser_view',},
+                   'opts': {'setLayout': 'collage_teaser_view',},
                    'childs': [
                        {'type': 'Image', 'title': 'The World of Zope',
                         'data': {'description':
