@@ -85,12 +85,8 @@ fieldset {
 
 #portal-top {
 	padding: 0 20px;
-	margin:auto;
-	width:980px;
 }
 #portal-columns {
-	margin:auto;
-	width:980px;
 }
 
 #portal-logo {
@@ -293,18 +289,27 @@ input.searchButton {
 	padding:10px 20px 20px 20px;
 }
 
-#portal-column-content{
-	background:transparent url(++resource++plonetheme.zopeorg.images/div80_bg.jpg) no-repeat scroll left 40px;
-	padding:20px;
-	width:610px;
-	padding-top:10px;
-}
-
 /* grid layout hacks */
 /* TODO: adapt grid layout patterns and best practices */
+div.width-full { width:100%; }
+div.width-3:4 {
+    width:650px;
+	background:transparent url(++resource++plonetheme.zopeorg.images/div80_bg.jpg) no-repeat scroll left 40px;
+}
+div.position-0 {
+    margin-left:-100%;
+}
 position-1:4{
 	margin-left:-68%;
 }
+
+
+
+#portal-column-content {
+	/* adding:20px;
+	padding-top:10px; */
+}
+
 
 body.kupu{
 	background: transparent;
