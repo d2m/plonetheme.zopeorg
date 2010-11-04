@@ -292,19 +292,19 @@ input.searchButton {
 /* grid layout hacks */
 /* TODO: adapt grid layout patterns and best practices */
 div.width-full { width:100%; }
-div.width-1:4 {
+div.width-1\3a 4 {
     width:320px;
-	background:transparent url(++resource++plonetheme.zopeorg.images/column_left.jpg) no-repeat scroll left 40px;
+	background:transparent url(++resource++plonetheme.zopeorg.images/column_left.jpg) no-repeat
 }
-div.width-3:4 {
+div.width-3\3a 4 {
     width:650px;
-	background:transparent url(++resource++plonetheme.zopeorg.images/column_main.jpg) no-repeat scroll left 40px;
+	background:transparent url(++resource++plonetheme.zopeorg.images/column_main.jpg) no-repeat
 }
 div.position-0 {
     margin-left:-100%;
 }
-position-1:4{
-	margin-left:650px;
+div.position-1\3a 4{
+	margin-left:-650px;
 }
 
 
