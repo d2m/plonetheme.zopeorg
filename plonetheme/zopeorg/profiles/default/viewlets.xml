@@ -14,4 +14,11 @@
 		<viewlet name="plone.global_sections"/>
 		<viewlet name="plone.searchbox"/>
 	</order>
+    <hidden manager="plone.abovecontent" skinname="zopeorg_theme">
+        <viewlet name="plone.path_bar" />
+    </hidden>
+    <order manager="plone.portaltop" skinname="zopeorg_theme" purge="True">
+        <viewlet name="plone.header" />
+        <viewlet name="zopeorg.path_bar" />
+    </order>
 </object>
