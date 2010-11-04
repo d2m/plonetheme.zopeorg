@@ -34,6 +34,15 @@
       permission="zope2.View"
       />
 
+  <!-- The Path Bar -->
+  <browser:viewlet
+      name="zopeorg.path_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      class="plone.app.layout.viewlets.common.PathBarViewlet"
+      permission="zope2.View"
+      />
+
+
   <!-- collage teaser view -->
   <browser:page
       name="collage_teaser_view"
