@@ -5,32 +5,17 @@
 __author__ = """Johannes Raggam <johannes@raggam.co.at>"""
 __docformat__ = 'plaintext'
 
+import collective.setuphandlertools as sht
 import logging
-from Products.CMFCore.utils import getToolByName
-from collective.setuphandlertools.utils import SetupHandlerTools
-
-PACKAGENAME = "plonetheme.zopeorg"
-
-logger = logging.getLogger(PACKAGENAME)
+logger = logging.getLogger("plonetheme.zopeorg")
 
 def setup_content(context):
-    sht = SetupHandlerTools(context, PACKAGENAME, globals())
-    if sht.isNotThisProfile('plonetheme.zopeorg_setup_content.txt'): return
+    if sht.isNotThisProfile(context, 'plonetheme.zopeorg_setup_content.txt'):
+        return
 
     site = context.getSite()
-    wft = getToolByName(site, 'portal_workflow')
-
-    for id in ['front-page', 'news', 'events']:
-        if id in site.contentIds():
-            site.manage_delObjects( [id] )
-            logger.info('removed %s' % id)
-
-    site['Members'].setExcludeFromNav(True)
-    try:
-        wft.doActionFor(site['Members'], 'retract')
-    except:
-        pass # hopefully retracted before
-
+    sht.delete_items(site, ('front-page', 'news', 'events'), logger)
+    sht.hide_and_retract(site['Members'], logger)
 
     content_structure = [
 
@@ -334,4 +319,4 @@ u"""<p>All materials found on this web site are the property of Zope Corporation
 <p>For further inquiry, please contact <a href="mailto:legal@zope.com">legal@zope.com</a>.</p>"""}},
 
     ]
-    sht.create_item_runner(site, content_structure)
+    sht.create_item_runner(site, content_structure, logger=logger)
