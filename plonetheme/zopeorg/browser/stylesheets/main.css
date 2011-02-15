@@ -96,13 +96,13 @@ fieldset {
 }
 
 #portal-personaltools-wrapper{
-	padding:11px 0;
+	padding:0;
 	text-align:right;
 	float:right;
 }
 
 #portal-siteactions {
-	padding:11px 0;
+	padding:3px 0;
 	text-align:right;
 	float:right;
 }
@@ -184,7 +184,7 @@ fieldset {
 }
 
 #portal-searchbox {
-	margin:7px 0 0;
+	margin:8px 0 0;
 	text-align:right;
 	width:200px;
 }
@@ -201,9 +201,9 @@ fieldset {
 #searchGadget {
 	background-color:transparent;
 	border:0 none;
-	margin:4px 5px 0 30px;
+	margin:3px 0 0 30px;
 	padding:3px;
-	width:135px;
+	width:145px;
 	color: #5A5A5A;
 }
 
@@ -414,7 +414,7 @@ body.kupu{
 	color:#E3E3E3;
 	padding:0px 20px;
     margin: 0pt auto;
-    width:900px;
+    width:980px;
 }
 #portal-feeter-wrapper{
     border-top:1px solid #E3E3E3;
@@ -684,7 +684,16 @@ img {
 	text-decoration: none;
 }
 .searchButton {
-	background-image: none;
+	background: url("++resource++plonetheme.zopeorg.images/search_button.gif") no-repeat scroll center center transparent;    
+	border: 0 none !important;    
+	color: transparent;    
+	cursor: pointer;    
+	font-size: 85%;    
+	margin: 0 0 0;    
+	padding: 4px;    
+	text-transform: lowercase;    
+	vertical-align: middle;    
+	width: 10px;
 }
 .LSTable {
 	padding: 0px;
