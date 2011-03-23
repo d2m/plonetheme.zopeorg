@@ -30,4 +30,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="setup_portlets"
+      title="plonetheme.zopeorg: setup portlets"
+      directory="profiles/setup_portlets"
+      description='plonetheme.zopeorg portlet content.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

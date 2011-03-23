@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlets
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="plone">
+  <assignment name="a-bit-of-history" 
+      type="plone.portlet.static.Static"
+      category="context"
+      key="/the-world-of-zope"
+      manager="plone.rightcolumn"
+      visible="True">
+    <property name="header">A Bit of History</property>
+    <property name="text"><![CDATA[
+<p>In 1996 Jim Fulton, now Zope Corporation CTO, was drafted to teach a class on common gateway interface (CGI) programming, despite not knowing very much about the subject. CGI programming is a commonly-used web development model that allows developers to construct dynamic websites. Traveling to the class, Jim studied all the existing documentation on CGI. On the way back, Jim considered what he didn’t like about traditional CGI-based programming environments. From these initial musings the core of Zope was written while flying back from the CGI class.</p>
+<p>Zope Corporation (then known as Digital Creations) went on to release three open-source software packages to support web publishing: Bobo, Document Template, and BoboPOS. These packages were written in a language called Python, and provided a web publishing facility, text templating, and an object database, respectively. Digital Creations developed a commercial application server based on these components and called it Principia. In November of 1998, investor Hadar Pedhazur convinced Digital Creations to open source Principia, thereby creating the foundation for the Zope application server.</p>
+<p>In 2001, the Zope community began working on a component architecture for Zope, but after several years they ended up with something much more: Zope 3. WhileZope 2 was powerful and popular, Zope 3 was designed to bring web application development to the next level.</p>
+      ]]></property>
+    <property name="footer">Source: The Zope3 Book</property>
+  </assignment>
+  <assignment name="rss-zope-calendar"
+      category="context"
+      key="/news-events"
+      manager="plone.rightcolumn"
+      type="portlets.rss"
+      visible="True">
+    <property name="count">3</property>
+    <property name="url">http://calendar.zope.org/RSS</property>
+    <property name="portlet_title">calendar.zope.org</property>
+    <property name="timeout">100</property>
+  </assignment>
+</portlets>
