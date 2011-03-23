@@ -250,20 +250,7 @@ fieldset .error {
     color: #bb2243;
 }
 
-input.searchButton {
-  	width: 10px;
-	background:transparent url(++resource++plonetheme.zopeorg.images/search_button.gif) no-repeat scroll center center;
-	border: 0 !important;
-    solid #8CACBB;
-	color:transparent;
-	cursor:pointer;
-	font-size:85%;
-	text-transform:lowercase;
-	vertical-align:middle;
-    margin:3px 0;
-    padding:3px;
-	margin-bottom:0px !important;
-}
+
 #portal-breadcrumbs{
 	color:#868686;
 	font-size:11px;
@@ -645,97 +632,6 @@ img {
 	top:-46px;
 }
 
-.LSBox input {
-    border: 0 !important;
-}
-
-.LSShadow {
-	position:relative;
-	text-align:right;
-}
-.livesearchContainer {
-	text-align: left;
-	background-color: #2375BB;
-	border: 1px solid #2375BB !important;
-	border-width:1px 1px 1px 1px;
-	z-index: 200;
-	position: absolute;
-	width: 250px;
-	right: 150px;
-	padding: 10px;
-	color:#436976;
-	font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
-	margin-top:0;
-	text-align:left;
-	text-transform:none;
-	top:0;
-	visibility:visible;
-	white-space:normal;
-
-}
-.livesearchContainer ul {
-	list-style-type: none;
-}
-.livesearchContainer a:link, .livesearchContainer a:visited {
-	color: #bd4265;
-	text-decoration: none;
-}
-.livesearchContainer a:hover {
-	color: #2375BB;
-	text-decoration: none;
-}
-.searchButton {
-	background: url("++resource++plonetheme.zopeorg.images/search_button.gif") no-repeat scroll center center transparent;    
-	border: 0 none !important;    
-	color: transparent;    
-	cursor: pointer;    
-	font-size: 85%;    
-	margin: 0 0 0;    
-	padding: 4px;    
-	text-transform: lowercase;    
-	vertical-align: middle;    
-	width: 10px;
-}
-.LSTable {
-	padding: 0px;
-	margin: 0px;
-}
-.discreet {
-	color: #5A5A5A;
-}
-#LSHighlight {
-	background-color: #DDCFCE;
-}
-span.highlightedSearchTerm {
-	background-color: #FFE900;
-}
-div.LSDescr {
-	color: #5A5A5A;
-}
-#livesearchLegend {
-	border-color:#8CACBB #8CACBB -moz-use-text-color;
-	border-style:solid solid none;
-	border-width:1px 1px 0;
-	line-height:1em;
-	margin-left:-1px;
-	margin-top:-2em;
-}
-
-.LSIEFix {
-	background-color:White;
-	padding:0.5em !important;
-	z-index:20;
-}
-
-
-.LSRow {
-	border:1px solid White;
-	list-style-image:none;
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	white-space:normal;
-}
 
 .default-template_error_message #portal-column-content {
 	background: transparent none;
@@ -979,3 +875,78 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
     border-bottom: 0;
     line-height: 2em;
 }
+
+.discreet { color: #5A5A5A; }
+
+/* SEARCH */
+.searchButton {
+	background-image:url("++resource++plonetheme.zopeorg.images/search_button.gif");
+    background-position:center center;
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+    height:17px;
+	width:10px;
+    margin:0;
+    padding:0;
+    border:0 !important;
+	color:transparent;
+	cursor:pointer;
+	font-size:85%;
+	text-transform:lowercase;
+	vertical-align:middle; }
+.livesearchContainer {
+	text-align: left;
+	background-color: #2375BB;
+	border: 1px solid #2375BB !important;
+	border-width:1px 1px 1px 1px;
+	z-index: 200;
+	position: absolute;
+	width: 250px;
+	right: 150px;
+	padding: 10px;
+	color:#436976;
+	font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+	margin-top:0;
+	text-align:left;
+	text-transform:none;
+	top:0;
+	visibility:visible;
+	white-space:normal; }
+.livesearchContainer ul { list-style-type: none; }
+.livesearchContainer a:link, .livesearchContainer a:visited {
+	color: #bd4265;
+	text-decoration: none; }
+.livesearchContainer a:hover {
+	color: #2375BB;
+	text-decoration: none; }
+#livesearchLegend {
+	border-color:#8CACBB #8CACBB -moz-use-text-color;
+	border-style:solid solid none;
+	border-width:1px 1px 0;
+	line-height:1em;
+	margin-left:-1px;
+	margin-top:-2em; }
+span.highlightedSearchTerm { background-color: #FFE900; }
+.LSBox input { border: 0 !important; }
+.LSShadow {
+	position:relative;
+	text-align:right; }
+.LSTable {
+	padding: 0px;
+	margin: 0px; }
+#LSHighlight { background-color: #DDCFCE; }
+div.LSDescr { color: #5A5A5A; }
+.LSIEFix {
+	background-color:White;
+	padding:0.5em !important;
+	z-index:20; }
+.LSRow {
+	border:1px solid White;
+	list-style-image:none;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	white-space:normal; }
+/* END SEARCH */
+
+
