@@ -154,7 +154,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
 <h2 style="padding-left: 0px; ">Websites</h2>
 <p style="padding-left: 0px; ">Localized Zope related websites, e.g. <a class="external-link" href="http://www.zope.de">www.zope.de<br /></a>Audience/Tool/Product targeted websites, e.g. <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a>, <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a>, <a class="external-link" href="http://grok.zope.org">grok.zope.org</a>, <a class="external-link" href="http://docs.zope.org">docs.zope.org</a>, <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
 <h2 style="padding-left: 0px; ">Planets</h2>
-<p style="padding-left: 0px; ">News collections from different Zope related blogs, like P<a class="external-link" href="http://planet.zope.org">lanet Zope</a>, P<a class="external-link" href="http://planet.plone.org">lanet Plone</a> and P<a class="external-link" href="http://planet.python.org">lanet Python</a>.</p>
+<p style="padding-left: 0px; ">News collections from different Zope related blogs, like <a class="external-link" href="http://planet.zope.org">Planet Zope</a>, <a class="external-link" href="http://planet.plone.org">Planet Plone</a> and <a class="external-link" href="http://planet.python.org">Planet Python</a>.</p>
          """}},
          
         {'type': 'Document', 'title': u'Resources', 'id': u'resources',
