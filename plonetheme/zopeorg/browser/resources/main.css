@@ -9,12 +9,15 @@ body {
 	line-height:16px;
 	margin:0;
 	padding:0; }
-h2 {
-	font-size: 16px;
-	font-weight: bold;
-	color: rgb(35, 117, 187); }
-h3 {
-	font-size: 14px;
+h1,
+#content h1 { font-size:1.6em; }
+h2,
+#content h2 {
+	font-size:1.4em;
+	color:rgb(35, 117, 187); }
+h3,
+#content h3 {
+	font-size:1.2em;
 	font-weight: normal;
 	color: rgb(35, 117, 187);
 	font-style: normal; }
@@ -26,20 +29,19 @@ img {
 	border:0 none;
 	margin:0;
 	padding:0; }
+.documentFirstHeading {
+	background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
+    background-position:0 1.6em;
+    background-repeat:repeat-x;
+	color:#2375BB;
+	font-style:italic;
+	margin-top:10px;
+	padding:0 0 10px; }
 .documentDescription{
 	color:#2375BB;
 	line-height:20px;
 	margin-top:-1px;
 	padding: 0px 0px 8px; }
-#content h2{
-	font-size: 16px;
-	font-weight: bold;
-	color: rgb(35, 117, 187); }
-#content h3{
-	font-size: 14px;
-	font-weight: normal;
-	color: rgb(35, 117, 187);
-	font-style: normal; }
 
 input, textarea {
     background-color:white;
@@ -353,15 +355,7 @@ dd.portletItem .navTreeItem a:hover {
 	background-position:right center;
 	background-repeat:no-repeat; }
 
-.documentFirstHeading {
-	background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
-    background-position:0 24px;
-    background-repeat:repeat-x;
-	color:#2375BB;
-	font-size:14px;
-	font-style:italic;
-	margin-top:10px;
-	padding:0 0 10px; }
+
 
 .navTreeItem div{
 	margin:0;
