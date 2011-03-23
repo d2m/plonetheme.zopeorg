@@ -52,292 +52,152 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
                    'childs': [
                         {'type': 'Document', 'title': u'Zope Community', 'id': u'front-community',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'description':u"""Zope community ...""",
-                                  'text': u"""<p>The Zope community ...</p>"""}},
+                         'data': {'text': u"""
+<p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
+<p><a class="internal-link" href="../community">Learn more...</a></p>
+                         """}},
                                   ],},
                   {'type': 'CollageColumn', 'title': '', 'id': '2',
                    'childs': [
                         {'type': 'Document', 'title': u'Zope Foundation', 'id': u'front-foundation',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'description':u"""Zope Foundation ...""",
-                                  'text': u"""<p>The Zope Foundation ...</p>"""}},
-                        {'type': 'Document', 'title': u'Zope.org legacy', 'id': u'front-archive',
+                         'data': {'text': u"""
+<p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform.</p>
+<p><a class="internal-link" href="../foundation">Learn more...</a></p>
+                         """}},
+                                  ],},
+                  {'type': 'CollageColumn', 'title': '', 'id': '3',
+                   'childs': [
+                        {'type': 'Document', 'title': u'Zope.org legacy', 'id': u'front-legacy',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'description':u"""zope.org legacy ...""",
-                                  'text': u"""<p>old.zope.org login ...</p>"""}},
+                         'data': {'text': u"""
+<p><a class="external-link" href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
+<p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/" style="padding-left: 0px; ">http://old.zope.org</a></p>
+                         """}},                         
                                   ],},
                   ],
               },
 
              ],
          },
+         
+        {'type': 'Image', 'title': 'old.zope.org Screenshot', 'id': u'Screenshotold.zope.org.png',
+         'opts': {'setExcludeFromNav': True},
+         'data': {'image': sht.load_file(globals(), 'setupdata/Screenshotold.zope.org.png'),
+                }},
 
-# THE WORLD OF ZOPE
-        {'type': 'Folder', 'title': u'The World of Zope',
-         'childs': [
-###
-             {'type': 'Folder', 'title': u'Application Servers',
-              'childs': [
-
-              {'type': 'Document', 'title': u'Zope',
-              'data': {'description':u"""Zope is a Python-based application server for building secure and highly scalable web applications.""",
-                       'text':
-u"""<p>The Zope 2 Application Server: <a class="external-site" href="http://zope2.zope.org/">zope2.zope.org</a></p>"""}},
-
-              {'type': 'Document', 'title': u'BlueBream',
-              'data': {'description':u"""BlueBream, the successor of Zope3.""",
-                       'text':
-u"""<p>BlueBream is a web framework written in the Python programming language.
-BlueBream is free/open source software, owned by the Zope Foundation, licensed
-under the Zope Public License (BSD like, GPL compatible license). BlueBream was
-previously known as Zope 3.</p>
-<p>BlueBream: <a class="external-site" href="http://bluebream.zope.org/">bluebream.zope.org</a></p>"""}},
-
-                  ]},
-###
-             {'type': 'Folder', 'title': u'Zope based CMS',
-              'childs': [
-
-              {'type': 'Document', 'title': u'Plone',
-              'data': {'description':u"""Plone, the enterprise ready Content Management System based on Zope.""",
-                       'text':
-u"""<p>A powerful, flexible Content Management solution that is easy to install,
-use and extend. Plone lets non-technical people create and maintain information
-using only a web browser. Perfect for web sites or intranets, Plone offers
-superior security without sacrificing extensibility or ease of use</p>
-<p>Plone CMS: <a class="external-site" href="http://plone.org/">plone.org</a></p>"""}},
-
-              {'type': 'Document', 'title': u'Silva',
-              'data': {'description':u"""Silva - content management for organizations.""",
-                       'text':
-u"""<p>Silva is a powerful CMS for organizations that manage multiple or complex
-websites. Content is stored in clean and futureproof XML, independent of layout
-and presentation. Features include versioning, workflow system, integral visual
-editor, content reuse, sophisticated access control, multi-site management,
-extensive import/export facilities, fine-grained templating, and hi-res image
-storage and manipulation. Silva has an open source (BSD) license.</p>
-</p>
-<p>The Silva Content Management System: <a class="external-site" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>"""}},
-                  ]},
-###
-             {'type': 'Folder', 'title': u'Databases',
-              'childs': [
-
-              {'type': 'Document', 'title': u'ZODB',
-              'data': {'description':u"""Zope Object DataBase, since 1998.""",
-                       'text':
-u"""<p>The Zope Object Database (ZODB) provides seamless object persistence in
-Python. It gets rid of requiring a relational database for your object-oriented
-application and provides you with a powerful and safe object store: persistence,
-transactions, scalability, and more.</p>
-<p>Zope Object Database - a native object database for Python: <a class="external-site" href="http://zodb.org/">zodb.org</a></p>"""}},
-                  ]},
-
-             {'type': 'Folder', 'title': u'Tools',
-              'childs': [
-
-              {'type': 'Document', 'title': u'Buildout',
-              'data': {'description':u"""Software build system for repeatable deployments.""",
-                       'text':
-u"""<p>Buildout is a Python-based build system for creating, assembling and
-deploying applications from multiple parts, some of which may be
-non-Python-based. It lets you create a buildout configuration and reproduce the
-same software later.</p>
-<p>Buildout software build system: <a class="external-site" href="http://buildout.org/">buildout.org</a></p>"""}},
-                  ]},
-###
-             {'type': 'Folder', 'title': u'Frameworks',
-              'childs': [
-
-              {'type': 'Document', 'title': u'CMF',
-              'data': {'description':u"""Content Management Framework (CMF) for Zope""",
-                       'text':
-u"""<p>The Content Management Framework (CMF) for Zope provides a powerful,
-tailorable platform for building content management applications.</p>
-<p>Zope Content Management Framework <a class="external-site" href="http://zope.org/Products/CMF/">zope.org/Products/CMF</a></p>"""}},
-
-              {'type': 'Document', 'title': u'Five',
-              'data': {'description':u"""Use Zope3 technologies in Zope2, 3+2=5.""",
-                       'text':
-u"""<p>Five is a Zope 2 product that allows you to integrate Zope 3 technologies
-into Zope 2, today. After its start as an independent product Five is now fully
-integrated with Zope 2.</p>
-<p>Five - The Zope 3 in Zope 2 project: <a class="external-site" href="http://codespeak.net/z3/five/">codespeak.net/z3/five</a></p>"""}},
-
-              {'type': 'Document', 'title': u'Grok',
-              'data': {'description':u"""Grok's Zope made easy.""",
-                       'text':
-u"""<p>Grok is a web application framework for Python developers. It is aimed at
-both beginners and very experienced web developers. Grok has an emphasis on
-agile development. Grok is easy and powerful.</p>
-<p>Grok - A Smashing Web Framework: <a class="external-site" href="http://grok.zope.org/">grok.zope.org</a></p>"""}},
-
-              {'type': 'Document', 'title': u'Repoze',
-              'data': {'description':u"""Repoze integrates Zope technologies with WSGI and reusable Python middleware.""",
-                       'text':
-u"""Plumbing Zope into the WSGI Pipeline: <p><a class="external-site" href="http://repoze.org/">repoze.org</a></p>"""}},
-
-              {'type': 'Document', 'title': u'ZCA',
-              'data': {'description':u"""The Zope Component Architecture.""",
-                       'text':
-u"""<p>The Zope Component Architecture (ZCA) was introduced in Zope3, which
-evolved from Zope 2. It improves the development experience through highly
-reusable components.</p>
-<p>ZCA / Zope3: <a class="external-site" href="http://wiki.zope.org/zope3">wiki.zope.org/zope3</a></p>"""}},
-
-              {'type': 'Document', 'title': u'ZPT',
-              'data': {'description':u"""Zope Page Templates, the best you can get.""",
-                       'text':
-u"""<p>Zope Page Templates is Zope's templating mechanism. ZPT allows reusable
-Template snippets through macros, object and view-context attribute access and a
-good seperation from logic. They were introduced after Zope invented the
-meanwhile deprecated DTML language.</p>
-<p>Zope Page Templates: <a class="external-site" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>"""}},
-
-              {'type': 'Document', 'title': u'ZTK',
-              'data': {'description':u"""The Zope Tool Kit libraries.""",
-                       'text':
-u"""<p>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by
-projects to develop web applications or web frameworks. It is developed by the
-contributors of the Zope Foundation. The whole collection of ZTK libraries are
-used in various web frameworks and web application servers. Two of these are
-managed by the Zope project: Zope 3 and Grok. If you install one of these
-systems, you will get the ZTK along with it automatically.</p>
-<p>Zope Toolkit: <a class="external-site" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit</a></p>"""}},
-
-                  ]},
-
-         ]},
-
-# NEWS AND EVENTS
-        {'type': 'Folder', 'title': u'News & Events'},
-
-# COMMUNITY
-        {'type': 'Folder', 'title': u'Community',
-         'childs': [
-
-             {'type': 'Document', 'title': u'Mailing Lists',
-              'data': {'description':u"""Zope related mailing lists.""",
-                       'text':
-u"""<p>Main Zope related mailing list collection: <a class="external-site" href="https://mail.zope.org/mailman/listinfo">https://mail.zope.org/mailman/listinfo</a></p>"""}},
-
-             {'type': 'Document', 'title': u'IRC',
-              'data': {'description':u"""Meet Zopistas in Internet Relay Chat channels""",
-                       'text':
-u"""<p>freenode.net hosts lots of Zope and Zope products/application related
-IRC channels. Visit <a class="external-site" href="http://irc.freenode.net/">irc.freenode.net</a>
-and try one of the following channels:</p>
+         
+         {'type': 'Document', 'title': u'The World of Zope', 'id': 'the-world-of-zope',
+          'data': {'text': u"""
+<p>During the last 12 years Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
+<div id="accordion">
+<h2>Application Servers</h2>
+<div>
+<p><strong>Zope<br /></strong>Zope is a Python-based application server for building secure and highly scalable web applications.</p>
+<p>More information at <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a></p>
+<p><strong>BlueBream</strong><br />BlueBream – formerly known as Zope 3 – is a web framework written in the Python programming language.</p>
+<p>More information at <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a></p>
+</div>
+<h2>Zope based CMS</h2>
+<div>
+<p><strong>Plone</strong><br />Plone, the enterprise ready Content Management System based on Zope.</p>
+<p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
+<p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
+<p>More information at <a class="external-link" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>
+</div>
+<h2>Databases</h2>
+<div>
+<p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
+<p>More information at <a class="external-link" href="http://zodb.zope.org">zodb.zope.org</a></p>
+</div>
+<h2>Tools</h2>
+<div>
+<p><strong>Buildout</strong><br />Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.</p>
+<p>More information at <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
+</div>
+<h2>Frameworks</h2>
+<div>
+<p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
+<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
+<p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
+<p>More information at <a class="external-link" href="http://grok.zope.org">grok.zope.org</a></p>
+<p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
+<p>More information at <a class="external-link" href="http://www.repoze.org">www.repoze.org</a></p>
+<p><strong>ZCA<br /></strong>The Zope Component Architecture.</p>
+<p>More information at <a class="external-link" href="http://wiki.zope.org/zope3">wiki.zope.org/zope3</a></p>
+<p><strong>ZPT<br /></strong>Zope Page Templates is Zope's templating mechanism.</p>
+<p>More information at <a class="external-link" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>
+<p><strong>ZTK﻿<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
+<p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
+</div>
+</div>          
+          """}},
+          
+        {'type': 'Document', 'title': u'News & Events', 'id': u'news-events',
+         'data': {'text': u"""
+<p>Find interesting news and events listed at <a class="external-link" href="http://calendar.zope.org">calendar.zope.org</a>.</p>
+<p>Additional information is available from the major RSS feeds</p>
 <ul>
-<li>#zope</li>
-<li>#zope.de</li>
-<li>#zope3-dev</li>
-<li>#plone</li>
-<li>#plone-framework</li>
-<li>#plone-tuneup</li>
-</ul>"""}},
+<li><a class="external-link" href="http://planetzope.org">Planet Zope</a></li>
+<li><a class="external-link" href="http://planet.plone.org">Planet Plone</a></li>
+<li><a class="external-link" href="http://planet.python.org">Planet Python</a></li>
+</ul>
+         """}},
+         
+        {'type': 'Document', 'title': u'Community', 'id': u'community',
+         'data': {'text': u"""
+<p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
+<h2>Mailing Lists</h2>
+<p>Main Zope related mailing list collection is available at <a class="external-link" href="https://mail.zope.org/mailman/listinfo">mail.zope.org/mailman/listinfo</a></p>
+<h2>IRC</h2>
+<p style="padding-left: 0px; ">freenode.net hosts lots of Zope and Zope products/application related IRC channels. Visit <a class="external-link" href="http://irc.freenode.net">irc.freenode.net</a> and try one of the following channels: #zope, #zope.de, #zope3-dev, #plone, #plone-framework, #plone-tuneup</p>
+<h2 style="padding-left: 0px; ">Websites</h2>
+<p style="padding-left: 0px; ">Localized Zope related websites, e.g. <a class="external-link" href="http://www.zope.de">www.zope.de<br /></a>Audience/Tool/Product targeted websites, e.g. <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a>, <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a>, <a class="external-link" href="http://grok.zope.org">grok.zope.org</a>, <a class="external-link" href="http://docs.zope.org">docs.zope.org</a>, <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
+<h2 style="padding-left: 0px; ">Planets</h2>
+<p style="padding-left: 0px; ">News collections from different Zope related blogs, like P<a class="external-link" href="http://planet.zope.org">lanet Zope</a>, P<a class="external-link" href="http://planet.plone.org">lanet Plone</a> and P<a class="external-link" href="http://planet.python.org">lanet Python</a>.</p>
+         """}},
+         
+        {'type': 'Document', 'title': u'Resources', 'id': u'resources',
+         'data': {'text': u"""
+<h2>Code Repositories</h2>
+<p>Zope public subversion repository provides read-only and selective write access to the source code for Zope's and related projects: <a class="external-link" href="http://svn.zope.org">svn.zope.org</a></p>
+<h2>PyPI</h2>
+<p>Zope projects @ Python Package Index: <a class="external-link" href="http://pypi.python.org/pypi?:action=browse&amp;amp;show=all&amp;amp;c=514">Zope2 related projects</a>, <a class="external-link" href="http://pypi.python.org/pypi?:action=browse&amp;amp;show=all&amp;amp;c=515">Zope3 related projects</a></p>
+<h2>Bug tracking</h2>
+<p>Launchpad is an open source suite of tools that help people and teams to work together on software projects. Launchpad itself is built with Zope 3. Look at the <a class="external-link" href="https://launchpad.net/zope/">Zope project hub @ Launchpad</a></p>
+<h2>Documentation</h2>
+<p>The hub website to Zope community documentation projects is at <a class="external-link" href="http://docs.zope.org/">docs.zope.org</a></p>
+<h2>Wiki</h2>
+<p>Community maintained documentation, scratchpad and further information. Hub site to Zope community wiki documentation: <a class="external-link" href="http://wiki.zope.org/">wiki.zope.org</a></p>
+<h2>Books</h2>
+<p>Get Books about Zope for online and offline reading.</p>
+<p>Books on Zope, Plone, Grok, Zope3, Bluebream, Repoze, Zope Component Architecture</p>
+<h2>Archive</h2>
+<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>         
+         """}},
 
-             {'type': 'Document', 'title': u'Websites',
-              'data': {'description':u"""Other Zope related websites""",
-                       'text':
-u"""<p>German Zope website: <a class="external-site" href="http://zope.de/">zope.de</a></p>"""}},
+        {'type': 'Document', 'title': u'Zope Foundation', 'id': u'foundation',
+         'data': {'text': u"""
+<p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform. It does this by supporting the Zope community.</p>
+<p>Our community includes the open source community of contributors to the Zope software, contributors to the documentation and web infrastructure, as well as the community of businesses and organizations that use Zope. The Zope Foundation is the copyright holder of the Zope software and many extensions and associated software. The Zope Foundation also manages the zope.org website, and manages the infrastructure for open source collaboration.</p>
+<div id="_mcePaste"></div>
+<div id="_mcePaste"></div>
+<div>For more information, visit <a class="external-link" href="http://foundation.zope.org">foundation.zope.org</a>.</div>
+<div></div>
+<h2><br />Contacting the Zope Foundation</h2>
+<div></div>
+<div id="_mcePaste"></div>
+<div id="_mcePaste" style="padding-left: 30px; "><strong>Zope Foundation</strong></div>
+<div id="_mcePaste" style="padding-left: 30px; ">901 Tyrrell Road</div>
+<div id="_mcePaste" style="padding-left: 30px; ">Raleigh, NC 27609</div>
+<div id="_mcePaste" style="padding-left: 30px; ">USA</div>
+<div id="_mcePaste" style="padding-left: 30px; "></div>
+<div id="_mcePaste" style="padding-left: 30px; ">Email: <a class="mail-link" href="mailto:foundation-info@zope.org">foundation-info@zope.org</a></div>
+<div id="_mcePaste" style="padding-left: 30px; "></div>
+<div id="_mcePaste" style="padding-left: 30px; ">Fax: +1 (703) 842-8076</div>
+<div style="padding-left: 30px; "></div>
+         """}},
 
-             {'type': 'Document', 'title': u'Planets',
-              'data': {'description':u"""News collections from differnt Zope related blogs.""",
-                       'text':
-u"""<p>Planet Zope: <a class="external-site" href="http://planet.zope.org/">planet.zope.org</a></p>
-<p>Planet Plone: <a class="external-site" href="http://planet.zope.org/">planet.plone.org</a></p>
-<p>Planet Python: <a class="external-site" href="http://planet.zope.org/">planet.python.org</a></p>"""}},
-
-             {'type': 'Document', 'title': u'Google Wave',
-              'data': {'description':u"""The next big thing in collaborative computing.""",
-                       'text':
-u"""<p>Visit Google Wave and get in touch with Zope developers and Users:#
-<a class="external-site" href="https://wave.google.com/wave/#restored:search:with%253Apublic+zope,restored:wave:googlewave.com!w%252Bkt1bTmUmA">Public Zope Wave</a></p>"""}},
-             ]},
-
-# RESOURCES
-        {'type': 'Folder', 'title': u'Resources',
-         'childs': [
-
-             {'type': 'Document', 'title': u'Code Repositories',
-              'data': {'description':u"""Code Repositories for Zope and related projects.""",
-                       'text':
-u"""<p>Zope public subversion repository provides read-only and selective write
-access to the source code for Zope's and related projects.<br />
-<a class="external-site" href="http://svn.zope.org/">svn.zope.org</a></p>"""}},
-
-             {'type': 'Document', 'title': u'PyPI',
-              'data': {'description':u"""Zope projects @ Python Package Index""",
-                       'text':
-u"""<p>Zope2 related projects: <a class="external-site" href="http://pypi.python.org/pypi?:action=browse&show=all&c=514">Framework :: Zope2</a></p>
-<p>ZTK, ZCA and other Zope3 related projects: <a class="external-site" href="http://pypi.python.org/pypi?:action=browse&show=all&c=515">Framework :: Zope3</a></p>"""}},
-
-             {'type': 'Document', 'title': u'Bug tracking',
-              'data': {'description':u"""Search for Bugs and file them there, if you finde some.""",
-                       'text':
-u"""<p>Launchpad is an open source suite of tools that help people and teams to
-work together on software projects. Launchpad is built with Zope 3.<br />
-<a class="external-site" href="https://launchpad.net/zope/">Zope project hub @ Launchpad</a></p>"""}},
-
-             {'type': 'Document', 'title': u'Documentation',
-              'data': {'description':u"""Get documentation about Zope and it's tools here""",
-                       'text':
-u"""<p>Hub site to Zope community documentation projects:
-<a class="external-site" href="http://docs.zope.org/">docs.zope.org</a>.</p>"""}},
-
-             {'type': 'Document', 'title': u'Wiki',
-              'data': {'description':u"""Community maintained documentation, scratchpad and further information.""",
-                       'text':
-u"""<p>Hub site to Zope community wiki documentation:
-<a class="external-site" href="http://wiki.zope.org/">wiki.zope.org</a>.</p>"""}},
-
-             {'type': 'Document', 'title': u'Books',
-              'data': {'description':u"""Get Books about Zope for online and offline reading.""",
-                       'text':
-u"""<h2>Zope</h2>
-<h2>Plone</h2>
-<h2>Grok</h2>
-<h2>Zope3</h2>
-<h2>Bluebream</h2>
-<h2>Repoze</h2>
-<h2>Component Architecture</h2>"""}},
-
-             {'type': 'Document', 'title': u'Archive',
-              'data': {'description':u"""Looking for the ancient Zope website? Visit old.zope.org.""",
-                       'text':
-u"""<p>Old Zope website: <a class="external-site" href="http://old.zope.org/">old.zope.org</a>.</p>"""}},
-
-         ]},
-
-# ZOPE FOUNDATION
-        {'type': 'Folder', 'title': u'Foundation',
-         'childs': [
-
-             {'type': 'Document', 'title': u'Zope Foundation',
-              'setDefault': True,
-              'data': {'description':u"""The Zope Foundation has the goal to promote, maintain, and develop the Zope platform. It does this by supporting the Zope community.""",
-                       'text':
-u"""<p>Our community includes the open source community of contributors to the
-Zope software, contributors to the documentation and web infrastructure, as well
-as the community of businesses and organizations that use Zope. The Zope
-Foundation is the copyright holder of the Zope software and many extensions and
-associated software. The Zope Foundation also manages the zope.org website, and
-manages the infrastructure for open source collaboration.</p>
-<p>For more information, visit:
-<a class="external-site" href="http://foundation.zope.org/">foundation.zope.org</a>."""}},
-
-             {'type': 'Document', 'title': u'Contact',
-              'data': {'description':u"""Contacting the Zope Foundation""",
-                       'text':
-u"""<p>Zope Foundation<br />
-901 Tyrrell Road<br />
-Raleigh, NC 27609<br />
-USA</p>
-<p><b>Email</b>: 
-<a href="mailto:foundation-info@zope.org">foundation-info@zope.org</a></p> 
-<p><b>Fax</b>:     +1 (703) 842-8076</p>"""}},
-
-         ]},
 
         {'type': 'Document', 'title': u'Legal', 'id': u'legal',
          'opts': {'setExcludeFromNav': True},
