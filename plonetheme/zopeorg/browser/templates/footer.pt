@@ -1,8 +1,7 @@
 <div id="portal-feeter-wrapper">
   <div id="portal-feeter">
     <div id="feeter_left">
-      <p><br /><br />This website is managed by Plone Open Source Content Managment System Copyright &copy; 2000-2011 Plone Foundation &amp; friends.<br/>
-      Plone and the Plone Logo are registered trademarks of the Plone Foundation. Licensed under GPL license.</p>
+    <p> </p>
       <h3>&copy; 2011 Zope Foundation</h3>
     </div>
     <div id="feeter_right">
