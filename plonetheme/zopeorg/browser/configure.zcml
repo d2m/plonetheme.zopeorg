@@ -11,8 +11,8 @@
       layer=".interfaces.IZopeorgTheme"
       />
   <browser:resourceDirectory
-      name="plonetheme.zopeorg.stylesheets"
-      directory="stylesheets"
+      name="plonetheme.zopeorg.resources"
+      directory="resources"
       layer=".interfaces.IZopeorgTheme"
       />
 
