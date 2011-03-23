@@ -300,22 +300,24 @@ dd.portletItem .navTreeItem a:hover {
 .divider { padding-bottom:12px; }
 
 /* portlets */
-.portletHeader{
-	background: transparent url(++resource++plonetheme.zopeorg.images/line.gif) repeat-x 0px 22px;
+dl.portlet dt, div.portletAssignments div.portletHeader,
+.portletHeader {
 	color:#2375BB;
-	font-size:14px;
+	font-size:1.2em;
 	font-style:italic;
-	margin:0;
-	padding:0 0 8px;
 	text-decoration:none;
-	font-weight: bold;
-	margin-top:2px; }
+	font-weight: bold;background-color:transparent;
+    background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
+    background-repeat:repeat-x;
+    background-position:0px 2.4em;
+    padding:1em; }
 .portletHeader a {
 	color:#2375BB;
 	font-size:14px;
 	font-style:italic;
 	text-decoration:none; }
 .portletItem {
+    line-height:1.2em;
 	padding:8px 0 0;
 	margin:0px; }
 .portletItemTitle{
@@ -705,3 +707,12 @@ div.LSDescr { color: #5A5A5A; }
     margin-top:1.4em; }
 h2.ui-state-default:before { content:"\25B8   "; }
 h2.ui-state-active:before { content:"\25BE   "; }
+div.ui-accordion-content {
+    margin:10px 0 0 20px;
+    padding:20px;
+    background:white; 
+    border-radius:20px;
+    -moz-border-radius:20px;
+    -webkit-border-radius:20px;
+    -khtml-border-radius:20px;
+}
