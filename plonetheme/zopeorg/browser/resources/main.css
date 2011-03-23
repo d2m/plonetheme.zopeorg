@@ -42,13 +42,13 @@ img {
 	font-style: normal; }
 
 input, textarea {
-    background-color: white;
-    background-image: none;
-    border: 1px solid #b0aeaf!important;
-    padding: 2px;
+    background-color:white;
+    background-image:none;
+    border:1px solid #b0aeaf!important;
+    padding:2px;
     font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; }
 .formControls input {
-    background-image: none;
+    background-image:none;
     font-weight: bold; }
 .context, .standalone {
     width: auto;
@@ -137,6 +137,7 @@ fieldset { border: 1px solid #b0aeaf; }
 	text-decoration:none; }
 #portal-globalnav .selected a ,
 #portal-globalnav .selected a:hover {
+    background-color:transparent;
 	background-image:url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
 	background-position:50% bottom;
 	background-repeat:no-repeat;
@@ -624,6 +625,7 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
 	width:145px;
 	color: #5A5A5A; }
 .searchButton {
+    background-color:transparent;
 	background-image:url("++resource++plonetheme.zopeorg.images/search_button.gif");
     background-position:center center;
     background-attachment:scroll;
@@ -704,4 +706,8 @@ div.LSDescr { color: #5A5A5A; }
 	white-space:normal; }
 /* END SEARCH */
 
-
+#accordion h2 {
+    cursor:pointer;
+    margin-top:1.4em; }
+h2.ui-state-default:before { content:"\25B8   "; }
+h2.ui-state-active:before { content:"\25BE   "; }
