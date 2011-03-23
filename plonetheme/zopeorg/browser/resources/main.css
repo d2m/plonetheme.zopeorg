@@ -252,16 +252,17 @@ fieldset .error {
 
 input.searchButton {
   	width: 10px;
-	background:transparent url(++resource++plonetheme.zopeorg.images/search_button.gif) no-repeat scroll 2px 1px;
+	background:transparent url(++resource++plonetheme.zopeorg.images/search_button.gif) no-repeat scroll center center;
 	border: 0 !important;
-    	solid #8CACBB;
+    solid #8CACBB;
 	color:transparent;
 	cursor:pointer;
 	font-size:85%;
-	margin-bottom:0px !important;
-	padding:4px;
 	text-transform:lowercase;
 	vertical-align:middle;
+    margin:3px 0;
+    padding:3px;
+	margin-bottom:0px !important;
 }
 #portal-breadcrumbs{
 	color:#868686;

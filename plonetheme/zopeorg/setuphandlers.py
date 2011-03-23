@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-#
-# GNU General Public License (GPL)
-#
-__docformat__ = 'plaintext'
-
 import collective.setuphandlertools as sht
 import logging
 logger = logging.getLogger("plonetheme.zopeorg")
@@ -24,7 +19,6 @@ def setup_content(context):
              {'type': 'CollageRow', 'title': '', 'id': '1',
               'childs': [
                   {'type': 'CollageColumn', 'title': '', 'id': '1',
-                   'opts': {'setLayout': 'collage_teaser_view',},
                    'childs': [
                        {'type': 'Image', 'title': 'The World of Zope',
                         'data': {'description':
@@ -230,3 +224,10 @@ incurred as a result of its use.</p>
 
     ]
     sht.create_item_runner(site, content_structure, logger=logger)
+
+    # more content configuration, which can't be done via setuphandlertools
+    from Products.Collage.interfaces import IDynamicViewManager
+    manager = IDynamicViewManager(site['front-page']['1']['1'])
+    manager.setLayout('collage_teaser_view')
+
+
