@@ -716,7 +716,7 @@ div.ui-accordion-content {
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
 }
-.external-link {
+a.external-link {
     text-align: center;
     padding: 0.25em 0.5em;
     color: white !important;
@@ -726,6 +726,6 @@ div.ui-accordion-content {
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
 }
-.external-link:hover {
+a.external-link:hover {
     color: black !important;
 }
