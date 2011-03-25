@@ -716,3 +716,16 @@ div.ui-accordion-content {
 	-webkit-border-radius: 8px;
 	-khtml-border-radius: 8px;
 }
+.external-link {
+    text-align: center;
+    padding: 0.25em 0.5em;
+    color: white;
+    margin: 0 auto 1em;
+    background: #75AD0A;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+.external-link:hover {
+    color: black;
+}
