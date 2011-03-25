@@ -189,14 +189,22 @@ fieldset .error {
 	border:1px solid #74AE0B;
 	padding:0; }
 
+#portal-column-content { float:left; }
 #portal-column-one {
+    float:left;
 /*	background-image:url(++resource++plonetheme.zopeorg.images/left_coloumn.jpg); */
 	background-repeat:no-repeat;
 	padding:10px 20px 20px 20px; }
+#portal-column-two { float:right; }
+div.width-full { width:100%; }
+div.width-3\3a 4 { width:650px; }
+div.width-1\3a 4 { width:320px; }
+
+#content { margin:0; }
 
 /* grid layout hacks */
 /* TODO: adapt grid layout patterns and best practices */
-div.width-full { width:100%; }
+/* div.width-full { width:100%; }
 div.width-1\3a 4 {
     width:320px;
 	background:transparent url(++resource++plonetheme.zopeorg.images/column_left.jpg) no-repeat; }
@@ -205,7 +213,7 @@ div.width-3\3a 4 {
 	background:transparent url(++resource++plonetheme.zopeorg.images/column_main.jpg) no-repeat; }
 div.position-0 { margin-left:-100%; }
 div.position-1\3a 4 { 	margin-left:-650px; }
-
+*/
 body.kupu { background: transparent; }
 
 .portletNavigationTree .portletHeader { padding:0 0 12px; }

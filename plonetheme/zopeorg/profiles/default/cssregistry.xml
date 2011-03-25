@@ -5,4 +5,5 @@
     media="screen" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
+ <stylesheet id="columns.css" enabled="0" />
 </object>
