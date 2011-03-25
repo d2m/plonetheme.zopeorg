@@ -189,7 +189,7 @@ fieldset .error {
 	border:1px solid #74AE0B;
 	padding:0; }
 
-#content { margin:0; }
+#content { margin:0; padding:0 1em; }
 #portal-column-content { float:left; }
 #portal-column-one {
     float:left;
@@ -200,11 +200,13 @@ div.width-full { width:100%;
 }
 div.width-3\3a 4 {
     width:650px;
-	background-image:transparent url(++resource++plonetheme.zopeorg.images/column_main.jpg);
+    background-color:transparent;
+	background-image:url(++resource++plonetheme.zopeorg.images/column_main.jpg);
     background-repeat:no-repeat; }
 div.width-1\3a 4 {
     width:320px;
-	background-image:transparent url(++resource++plonetheme.zopeorg.images/column_portlet.jpg);
+    background-color:transparent;
+	background-image:url(++resource++plonetheme.zopeorg.images/column_portlet.jpg);
     background-repeat:no-repeat; }
 
 body.kupu { background: transparent; }
