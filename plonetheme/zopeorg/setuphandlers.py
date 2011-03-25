@@ -66,7 +66,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
                          'opts': {'setExcludeFromNav': True},
                          'data': {'text': u"""
 <p><a class="external-link" href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
-<p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/" style="padding-left: 0px; ">http://old.zope.org</a></p>
+<p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
                          """}},                         
                                   ],},
                   ],
@@ -83,7 +83,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
          
          {'type': 'Document', 'title': u'The World of Zope', 'id': 'the-world-of-zope',
           'data': {'text': u"""
-<p>During the last 12 years Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
+<p>During more than a dekade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
 <div id="accordion">
 <h2>Application Servers</h2>
 <div>

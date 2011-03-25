@@ -1,30 +1,41 @@
 /* styles for zope.org */
 body {
-	background-color:#C9C9C9;
-	background-image:url(++resource++plonetheme.zopeorg.images/body_bg.jpg);
-	background-repeat:repeat-x;
-	color:#5A5A5A;
-	font-family:Verdana,Helvetica,Arial,sans-serif;
-	font-size:18px;
-	line-height:16px;
-	margin:0;
-	padding:0; }
-h1,
-#content h1 { font-size:1.6em; }
-h2,
-#content h2 {
-	font-size:1.4em;
-	color:rgb(35, 117, 187); }
-h3,
-#content h3 {
-	font-size:1.2em;
-	font-weight: normal;
-	color: rgb(35, 117, 187);
-	font-style: normal; }
+    background-color: #C9C9C9;
+    background-image: url(++resource++plonetheme.zopeorg.images/body_bg.jpg);
+    background-repeat: repeat-x;
+    color: #5A5A5A;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, #content h1 {
+    font-size: 1.6em;
+}
+
+h2, #content h2 {
+    font-size: 1.4em;
+    color: rgb(35, 117, 187);
+}
+
+h3, #content h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: rgb(35, 117, 187);
+    font-style: normal;
+}
+
 a {
-	color: #bd4265;
-	text-decoration: none; }
-a:hover { color: #2375BB; }
+    color: #bd4265;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2375BB;
+}
+
 img {
 	border:0 none;
 	margin:0;
@@ -37,150 +48,218 @@ img {
 	padding: 0px 0px 8px; }
 
 input, textarea {
-    background-color:white;
-    background-image:none;
-    border:1px solid #b0aeaf!important;
-    padding:2px;
-    font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif; }
+    background-color: white;
+    background-image: none;
+    border: 1px solid #b0aeaf !important;
+    padding: 2px;
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+}
+
 .formControls input {
-    background-image:none;
-    font-weight: bold; }
+    background-image: none;
+    font-weight: bold;
+}
+
 .context, .standalone {
     width: auto;
     padding: 3px 8px !important;
-    background-image: none !important; }
+    background-image: none !important;
+}
+
 .formControls .context {
     border: 3px solid #3581bf !important;
     background-color: #1e639e !important;
-    color: white !important; }
+    color: white !important;
+}
+
 .formControls .standalone {
     border: 3px solid #888 !important;
     background-color: #6b6b6b !important;
-    color: white !important; }
+    color: white !important;
+}
+
 legend {
     background-color: transparent;
-    color: #808888; }
-fieldset { border: 1px solid #b0aeaf; }
+    color: #808888;
+}
+
+fieldset {
+    border: 1px solid #b0aeaf;
+}
 
 #portal-logo {
-    margin-top:32px;
-	margin-bottom:32px;
-	height:57px; }
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: 57px;
+}
 
-#portal-personaltools-wrapper{
-	padding:0;
-	text-align:right;
-	float:right; }
+#portal-personaltools-wrapper {
+    padding: 0;
+    text-align: right;
+    float: right;
+}
 
 #portal-siteactions {
-	padding:3px 0;
-	text-align:right;
-	float:right; }
+    padding: 3px 0;
+    text-align: right;
+    float: right;
+}
+
 #portal-siteactions li {
-	display:inline;
-	list-style-type:none;
-	padding-right:12px;
-	padding-top: 3px; }
+    display: inline;
+    list-style-type: none;
+    padding-right: 12px;
+    padding-top: 3px;
+}
+
 #portal-siteactions li a {
-	color:#595959;
-	font-size:10px;
-	text-decoration:none; }
+    color: #595959;
+    font-size: 10px;
+    text-decoration: none;
+}
+
 #portal-siteactions li a:hover {
-	color: #2375BB;
-	text-decoration: underline; }
-#siteaction-login{
-	background: transparent url(++resource++plonetheme.zopeorg.images/login_icon.gif) no-repeat top left;
-	padding-bottom:9px;
-	padding-right:58px !important; }
+    color: #2375BB;
+    text-decoration: underline;
+}
+
+#siteaction-login {
+    background: transparent url(++resource++plonetheme.zopeorg.images/login_icon.gif) no-repeat top left;
+    padding-bottom: 9px;
+    padding-right: 58px !important;
+}
+
 #siteaction-login a {
-	position: absolute;
-	width:58px !important;
-	height:24px !important; }
-#siteaction-logout{
-	background: transparent url(++resource++plonetheme.zopeorg.images/logout.gif) no-repeat top left;
-	padding-bottom:9px;
-	padding-right:58px !important; }
+    position: absolute;
+    width: 58px !important;
+    height: 24px !important;
+}
+
+#siteaction-logout {
+    background: transparent url(++resource++plonetheme.zopeorg.images/logout.gif) no-repeat top left;
+    padding-bottom: 9px;
+    padding-right: 58px !important;
+}
 
 #siteaction-logout a {
-	position: absolute;
-	width:58px !important;
-	height:24px !important; }
+    position: absolute;
+    width: 58px !important;
+    height: 24px !important;
+}
 
 /* globalnav */
-#portal-globalnav{
-	background:none;
-	padding: 0;
-	clear: both;
-	float: left; }
-#portal-globalnav li{
-	float:left;
-	list-style-type:none;
-	padding-right:20px; }
-#portal-globalnav li a {
-	color:#FFFFFF;
-	background:none;
-	display:block;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 0 15px;
-	text-decoration:none;
-	border-right: none; }
-#portal-globalnav li a:hover {
-	color:#C0E0FC;
-	text-decoration:none; }
-#portal-globalnav .selected a ,
-#portal-globalnav .selected a:hover {
-    background-color:transparent;
-	background-image:url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
-	background-position:50% bottom;
-	background-repeat:no-repeat;
-	color:#C0E0FC; }
-#portal-globalnav .selected a,
-#portal-globalnav .selected a:hover,
-#portal-globalnav a:hover { background-color:transparent; }
+#portal-globalnav {
+    background: none;
+    padding: 0;
+    clear: both;
+    float: left;
+}
 
+#portal-globalnav li {
+    float: left;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+#portal-globalnav li a {
+    color: #FFFFFF;
+    background: none;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 0 15px;
+    text-decoration: none;
+    border-right: none;
+}
+
+#portal-globalnav li a:hover {
+    color: #C0E0FC;
+    text-decoration: none;
+}
+
+#portal-globalnav .selected a, #portal-globalnav .selected a:hover {
+    background-color: transparent;
+    background-image: url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    color: #C0E0FC;
+}
+
+#portal-globalnav .selected a, #portal-globalnav .selected a:hover, #portal-globalnav a:hover {
+    background-color: transparent;
+}
 
 dl.error {
     border: 1px solid #bb2243;
     background-color: #e3b5c2 !important;
-    padding: 5px; }
-dl.error dt { color: #bb2243; }
+    padding: 5px;
+}
+
+dl.error dt {
+    color: #bb2243;
+}
+
 dl.info {
     border: 1px solid #3581bf;
     background-color: #ccd4dc !important;
-    padding: 5px; }
-dl.info dt { color: #3581bf; }
+    padding: 5px;
+}
+
+dl.info dt {
+    color: #3581bf;
+}
+
 dl.info dt, dl.error dt {
     float: left;
     margin: 0;
     padding: 0 5px 0 0;
-    font-weight: bold; }
+    font-weight: bold;
+}
+
 dl.info dd, dl.error dd {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+}
 
 fieldset .error {
     border-color: #bb2243;
-    background-color: #e3b5c2 !important; }
-.fieldRequired {
-    background-image:none;
-    padding: 0;
-    color: #bb2243; }
+    background-color: #e3b5c2 !important;
+}
 
-#portal-breadcrumbs{
-	color:#868686;
-	font-size:11px;
-	font-style:italic;
-	padding:2px 0px 6px;
-	clear: both; }
+.fieldRequired {
+    background-image: none;
+    padding: 0;
+    color: #bb2243;
+}
+
+#portal-breadcrumbs {
+    color: #868686;
+    font-size: 11px;
+    font-style: italic;
+    padding: 2px 0px 6px;
+    clear: both;
+}
+
 #portal-breadcrumbs a {
-	color:#868686;
-	text-decoration:none; }
+    color: #868686;
+    text-decoration: none;
+}
 
 .documentEditable .documentContent {
-	background:transparent none repeat scroll 0 0;
-	border:1px solid #74AE0B;
-	padding:0; }
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #74AE0B;
+    padding: 0;
+}
+
+#content {
+    margin: 0;
+    padding: 0 1em 1em 1em;
+	min-height: 400px;
+}
+
+#portal-column-content {
+    float: left;
+}
 
 #content { margin:0; padding:0; }
 #content h1 { padding:0 1em; }
@@ -340,7 +419,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
 	font-size:12px;
 	font-weight:bold; }
 .portletItemDescription { padding-bottom:5px; }
-.portletItemDetails{ padding-bottom:5px; }
+.portletItemDetails{ display: none; }
 .portletItemMore {
 	background-image:url(++resource++plonetheme.zopeorg.images/show_more_icon.gif);
 	background-position:right center;
@@ -718,6 +797,7 @@ div.LSDescr { color: #5A5A5A; }
 /* END SEARCH */
 
 #accordion h2 {
+	outline: 0;
     cursor:pointer;
     margin-top:1.4em; }
 h2.ui-state-default:before { content:"\25B8   "; }
