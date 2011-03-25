@@ -704,6 +704,7 @@ div.LSDescr { color: #5A5A5A; }
 /* END SEARCH */
 
 #accordion h2 {
+	outline: 0;
     cursor:pointer;
     margin-top:1.4em; }
 h2.ui-state-default:before { content:"\25B8   "; }
