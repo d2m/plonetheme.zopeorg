@@ -189,7 +189,7 @@ fieldset .error {
 	border:1px solid #74AE0B;
 	padding:0; }
 
-#content { margin:0; padding:0 1em; }
+#content { margin:0; padding:0 1em 1em 1em; }
 #portal-column-content { float:left; }
 #portal-column-one {
     float:left;
