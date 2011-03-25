@@ -29,14 +29,7 @@ img {
 	border:0 none;
 	margin:0;
 	padding:0; }
-.documentFirstHeading {
-	background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
-    background-position:0 1.6em;
-    background-repeat:repeat-x;
-	color:#2375BB;
-	font-style:italic;
-	margin-top:10px;
-	padding:0 0 10px; }
+
 .documentDescription{
 	color:#2375BB;
 	line-height:20px;
@@ -189,7 +182,8 @@ fieldset .error {
 	border:1px solid #74AE0B;
 	padding:0; }
 
-#content { margin:0; padding:0 1em 1em 1em; }
+#content { margin:0; padding:1em; }
+#portal-column-one>div, #portal-column-two>div { padding:1em; }
 #portal-column-content { float:left; }
 #portal-column-one {
     float:left;
@@ -300,7 +294,24 @@ dd.portletItem .navTreeItem a:hover {
 
 .divider { padding-bottom:12px; }
 
+
+
+#content li, dl.portlet li { margin-bottom:1em; }
+
 /* portlets */
+dl.portlet dd.portletItem,
+dl.portlet dd.portletFooter,
+dl.portletError dd {
+    padding:0; }
+
+.documentFirstHeading {
+	background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
+    background-position:0 35px;
+    height:40px;
+    background-repeat:repeat-x;
+	color:#2375BB;
+	font-style:italic; 
+    margin-bottom:15px; }
 dl.portlet dt, div.portletAssignments div.portletHeader,
 .portletHeader {
 	color:#2375BB;
@@ -310,13 +321,10 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
 	font-weight: bold;background-color:transparent;
     background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
     background-repeat:repeat-x;
-    background-position:0px 2.4em;
-    padding:1em; }
-.portletHeader a {
-	color:#2375BB;
-	font-size:14px;
-	font-style:italic;
-	text-decoration:none; }
+    background-position:0 35px;
+    margin-bottom:15px;
+    height:40px;
+    padding:0; }
 .portletItem {
     line-height:1.2em;
 	padding:8px 0 0;
