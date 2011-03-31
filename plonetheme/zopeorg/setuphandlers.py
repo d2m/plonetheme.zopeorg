@@ -65,7 +65,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
                         {'type': 'Document', 'title': u'Zope.org legacy', 'id': u'front-legacy',
                          'opts': {'setExcludeFromNav': True},
                          'data': {'text': u"""
-<p><a class="external-link" href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
+<p><a href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
 <p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
                          """}},                         
                                   ],},
