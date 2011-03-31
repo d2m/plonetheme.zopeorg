@@ -253,7 +253,7 @@ fieldset .error {
 
 #content {
     margin: 0;
-    padding: 0 1em 1em 1em;
+    padding: 1em;
 	min-height: 400px;
 }
 
@@ -261,7 +261,6 @@ fieldset .error {
     float: left;
 }
 
-#content { margin:0; padding:0; }
 #content h1 { padding:0 1em; }
 #content-core { padding:1em; }
 #portal-column-one>div, #portal-column-two>div { padding:1em; }
@@ -406,7 +405,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
 	font-weight: bold;background-color:transparent;
     background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
     background-repeat:repeat-x;
-    background-position:0 35px;
+    background-position:0 32px;
     margin-bottom:15px;
     height:40px;
     padding:0; }
