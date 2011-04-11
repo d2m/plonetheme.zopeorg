@@ -30,5 +30,6 @@ setup(name='plonetheme.zopeorg',
           'collective.collage.portlets',
           'collective.setuphandlertools',
           'archetypes.schemaextender',
+          'collective.teaser',
       ],
       )

@@ -3,7 +3,8 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:cmf="http://namespaces.zope.org/cmf"
     i18n_domain="plonetheme.zopeorg">
-
+  
+  <include package="collective.teaser" />
   <include package="Products.Collage" />
   <include package="collective.collage.portlets" />
   <include package="archetypes.schemaextender" />

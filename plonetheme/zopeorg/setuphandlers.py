@@ -12,7 +12,10 @@ def setup_content(context):
     sht.hide_and_retract(site['Members'], logger)
 
     content_structure = [
-
+        {'type': 'Folder', 'title': u'Teasers',
+         'opts': {'workflow': None, # leave private
+                  'setLocallyAllowedTypes': ['Teaser',],
+                  'setImmediatelyAddableTypes':['Teaser',]}},
         {'type': 'Collage', 'title': u'Start', 'id': 'front-page',
          'data': { 'show_title': False, 'show_description': False, },
          'childs': [
@@ -67,20 +70,20 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
                          'data': {'text': u"""
 <p><a href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
 <p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
-                         """}},                         
+                         """}},
                                   ],},
                   ],
               },
 
              ],
          },
-         
+
         {'type': 'Image', 'title': 'old.zope.org Screenshot', 'id': u'Screenshotold.zope.org.png',
          'opts': {'setExcludeFromNav': True},
          'data': {'image': sht.load_file(globals(), 'setupdata/Screenshotold.zope.org.png'),
                 }},
 
-         
+
          {'type': 'Document', 'title': u'The World of Zope', 'id': 'the-world-of-zope',
           'data': {'text': u"""
 <p>During more than a dekade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
@@ -124,9 +127,9 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
 <p><strong>ZTK﻿<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
 <p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
 </div>
-</div>          
+</div>
           """}},
-          
+
         {'type': 'Document', 'title': u'News & Events', 'id': u'news-events',
          'data': {'text': u"""
 <p>Find interesting news and events listed at <a class="external-link" href="http://calendar.zope.org">calendar.zope.org</a>.</p>
@@ -137,7 +140,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
 <li><a class="external-link" href="http://planet.python.org">Planet Python</a></li>
 </ul>
          """}},
-         
+
         {'type': 'Document', 'title': u'Community', 'id': u'community',
          'data': {'text': u"""
 <p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
@@ -150,7 +153,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
 <h2 style="padding-left: 0px; ">Planets</h2>
 <p style="padding-left: 0px; ">News collections from different Zope related blogs, like <a class="external-link" href="http://planet.zope.org">Planet Zope</a>, <a class="external-link" href="http://planet.plone.org">Planet Plone</a> and <a class="external-link" href="http://planet.python.org">Planet Python</a>.</p>
          """}},
-         
+
         {'type': 'Document', 'title': u'Resources', 'id': u'resources',
          'data': {'text': u"""
 <h2>Code Repositories</h2>
@@ -167,7 +170,7 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
 <p>Get Books about Zope for online and offline reading.</p>
 <p>Books on Zope, Plone, Grok, Zope3, Bluebream, Repoze, Zope Component Architecture</p>
 <h2>Archive</h2>
-<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>         
+<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>
          """}},
 
         {'type': 'Document', 'title': u'Zope Foundation', 'id': u'foundation',
@@ -197,28 +200,28 @@ evolved into many distinct applications, frameworks, libraries and tools.""",
          'opts': {'setExcludeFromNav': True},
          'data': {'description':u"""Zope.org Legal Notice.""",
                   'text':
-u"""<p>All materials found on this web site are the property of Zope Foundation 
-and all rights are reserved. The information contained in and on the various pages 
-of the Zope.org web site have been issued for general distribution under 
-the protection of United States copyright laws. In addition to US copyright laws, 
-the information presented on Zope.org web site is protected under the 
-Berne Convention for the Protection of Literature and Artistic works, as well as 
-under other international conventions and under national laws on copyright and 
+u"""<p>All materials found on this web site are the property of Zope Foundation
+and all rights are reserved. The information contained in and on the various pages
+of the Zope.org web site have been issued for general distribution under
+the protection of United States copyright laws. In addition to US copyright laws,
+the information presented on Zope.org web site is protected under the
+Berne Convention for the Protection of Literature and Artistic works, as well as
+under other international conventions and under national laws on copyright and
 neighboring rights.</p>
-<p>Extracts of the information in the web site may be reviewed, reproduced or 
-translated for research or private study but not for sale or for use in conjunction 
-with commercial purposes. Any use of information in the web site should be 
-accompanied by an acknowledgment of Zope.org as the source, citing the 
-uniform resource locator (URL) of the article. Reproduction, translation or any 
-use of this website requires explicit prior authorization in writing. Applications 
+<p>Extracts of the information in the web site may be reviewed, reproduced or
+translated for research or private study but not for sale or for use in conjunction
+with commercial purposes. Any use of information in the web site should be
+accompanied by an acknowledgment of Zope.org as the source, citing the
+uniform resource locator (URL) of the article. Reproduction, translation or any
+use of this website requires explicit prior authorization in writing. Applications
 and inquiries should be addressed to <a href="mailto:foundation-info@zope.org">foundation-info@zope.org</a>.</p>
-<p>Any mention of specific companies or of certain manufacturers' products on 
-Zope.org's web site does not imply that they are endorsed or recommended 
-by Zope Foundation in preference to others of a similar nature that are not 
-mentioned. Errors and omissions excepted, the names of proprietary products are 
+<p>Any mention of specific companies or of certain manufacturers' products on
+Zope.org's web site does not imply that they are endorsed or recommended
+by Zope Foundation in preference to others of a similar nature that are not
+mentioned. Errors and omissions excepted, the names of proprietary products are
 distinguished by initial capital letters.</p>
-<p>Zope Foundation does not warrant that the information contained in the web 
-site is complete and correct and shall not be liable whatsoever for any damages 
+<p>Zope Foundation does not warrant that the information contained in the web
+site is complete and correct and shall not be liable whatsoever for any damages
 incurred as a result of its use.</p>
 <p>For further inquiry, please contact <a href="mailto:foundation-info@zope.org">foundation-info@zope.org</a>.</p>"""}},
 
