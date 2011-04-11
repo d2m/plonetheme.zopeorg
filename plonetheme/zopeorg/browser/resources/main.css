@@ -170,6 +170,7 @@ fieldset {
     padding: 14px 0 15px;
     text-decoration: none;
     border-right: none;
+    min-width:0;
 }
 
 #portal-globalnav li a:hover {
