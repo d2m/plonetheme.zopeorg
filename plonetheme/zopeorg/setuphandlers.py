@@ -15,7 +15,14 @@ def setup_content(context):
         {'type': 'Folder', 'title': u'Teasers',
          'opts': {'workflow': None, # leave private
                   'setLocallyAllowedTypes': ['Teaser',],
-                  'setImmediatelyAddableTypes':['Teaser',]}},
+                  'setImmediatelyAddableTypes':['Teaser',]},
+         'childs': [
+             {'type': 'Teaser', 'title': 'The World of Zope',
+              'data': {'image': sht.load_file(globals(), 'setupdata/teaser_world-of-zope.jpg'),
+                       'link_external': u'../the-world-of-zope'}
+              }]
+          },
+
         {'type': 'Collage', 'title': u'Start', 'id': 'front-page',
          'data': { 'show_title': False, 'show_description': False, },
          'childs': [
