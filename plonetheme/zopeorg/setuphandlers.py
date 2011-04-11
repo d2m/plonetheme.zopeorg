@@ -28,20 +28,8 @@ def setup_content(context):
          'childs': [
              {'type': 'CollageRow', 'title': '', 'id': '1',
               'childs': [
-                  {'type': 'CollageColumn', 'title': '', 'id': '1',
-                   'childs': [
-                       {'type': 'Image', 'title': 'The World of Zope',
-                        'data': {'description':
-u"""Zope is a free and opensource web application server written in the object-oriented
-programming language "Python". Since its release in 1998 Zope continued to grow and
-evolved into many distinct applications, frameworks, libraries and tools.""",
-                        'image': sht.load_file(globals(), 'setupdata/teaser_world-of-zope-plain.jpg'),
-                        'teaser_url': u'../the-world-of-zope',
-                        'teaser_style': u'position: absolute; left: 480px; top: 167px; font-size: 12pt; color: white;',
-                                },
-                        },
-                       ],
-                   },
+                  # the following column should hold a teaser portlet
+                  {'type': 'CollageColumn', 'title': '', 'id': '1'},
                   ],
               },
              {'type': 'CollageRow', 'title': '', 'id': '2',
