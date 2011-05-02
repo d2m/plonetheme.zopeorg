@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="Plone Site"
+  meta_type="Factory-based Type Information with dynamic views">
+  <property name="allowed_content_types">
+    <element value="Collage" />
+    <element value="Document" />
+    <element value="Event" />
+    <element value="File" />
+    <element value="Folder" />
+    <element value="Image" />
+    <element value="Link" />
+    <element value="News Item" />
+    <element value="Topic" />
+  </property>
+</object>
