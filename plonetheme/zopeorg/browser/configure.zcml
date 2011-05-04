@@ -42,15 +42,4 @@
       permission="zope2.View"
       />
 
-
-  <!-- collage teaser view -->
-  <browser:page
-      name="collage_teaser_view"
-      for="Products.Collage.interfaces.ICollageColumn"
-      template="templates/collage_teaser_view.pt"
-      class=".common.CollageTeaserView"
-      permission="zope2.View"
-      layer="Products.Collage.interfaces.ICollageBrowserLayer"
-      />
-
 </configure>
