@@ -28,7 +28,8 @@ class ImageExtender(object):
             validators=('isURL',),
             widget = atapi.StringWidget(
                         description = _(u'help_teaser_url',
-                                        default=u"Link to content for teaser. Add http:// for external links."),
+                                        default=u"""Link to content for teaser
+                                        . Add http:// for external links."""),
                         label = _(u'label_teaser_url', default=u'Teaser URL')
                         )),
 
@@ -38,8 +39,11 @@ class ImageExtender(object):
             accessor='teaser_style',
             widget = atapi.StringWidget(
                         description = _(u'help_teaser_style',
-                                        default=u"ONLY FOR TEASER IMAGES: CSS styles used for the teaser text"),
-                        label = _(u'label_teaser_css', default=u'Teaser CSS style')
+                                        default=u"""ONLY FOR TEASER IMAGES:
+                                        CSS styles used for the teaser
+                                        text"""),
+                        label = _(u'label_teaser_css',
+                                  default=u'Teaser CSS style')
                         )),
 
     ]
