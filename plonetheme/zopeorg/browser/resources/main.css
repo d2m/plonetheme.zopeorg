@@ -1,3 +1,7 @@
+/*overrides*/
+#collage .portletTeaser .portletHeader { display:none; }
+#collage .portletTeaser .portletItem { padding:0; margin:0; }
+#collage .portletTeaser  { padding:0; margin:0 0 1em -1em; }
 /* styles for zope.org */
 body {
     background-color: #C9C9C9;
