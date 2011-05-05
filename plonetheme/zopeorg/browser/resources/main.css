@@ -1,7 +1,7 @@
 /*overrides*/
 #collage .portletTeaser .portletHeader { display:none; }
 #collage .portletTeaser .portletItem { padding:0; margin:0; }
-#collage .portletTeaser  { padding:0; margin:0 0 1em -1em; }
+#collage .portletTeaser  { padding:0; margin:0 -10px 1em -10px; }
 /* styles for zope.org */
 body {
     background-color: #C9C9C9;
@@ -258,7 +258,7 @@ fieldset .error {
 
 #content {
     margin: 0;
-    padding: 1em;
+    padding: 10px;
 	min-height: 400px;
 }
 
