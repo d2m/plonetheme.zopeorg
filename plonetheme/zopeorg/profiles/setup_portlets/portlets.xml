@@ -2,6 +2,23 @@
 <portlets
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n:domain="plone">
+  <assignment name="teaser-front-page" 
+      type="collective.teaser.teaser_portlet"
+      category="context"
+      key="/front-page/1/1"
+      manager="collage.portletmanager"
+      visible="True">
+    <property name="importance_levels">
+      <element>1</element>
+      <element>2</element>
+      <element>3</element>
+      <element>4</element>
+    </property>
+    <property name="num_teasers">1</property>
+    <property name="show_title">False</property>
+    <property name="prefer_altimage">False</property>
+    <property name="image_size">0_overfull</property>
+  </assignment>
   <assignment name="a-bit-of-history" 
       type="plone.portlet.static.Static"
       category="context"

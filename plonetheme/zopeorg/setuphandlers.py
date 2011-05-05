@@ -84,8 +84,6 @@ def setup_content(context):
     manager = IDynamicViewManager(site['front-page']['1']['1'])
     manager.setLayout('portlets-top')
 
-
-
 START_ZOPE_COMMUNITY_TEXT = u"""
 <p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
 <p><a class="internal-link" href="../community">Learn more...</a></p>
