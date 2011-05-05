@@ -79,7 +79,7 @@ def setup_content(context):
     ]
     sht.create_item_runner(site, content_structure, logger=logger)
 
-    # more content configuration, which can't be done via setuphandlertools
+    #the collage column will hold a portlet, so the view must be portlets-top
     from Products.Collage.interfaces import IDynamicViewManager
     manager = IDynamicViewManager(site['front-page']['1']['1'])
     manager.setLayout('portlets-top')
