@@ -28,7 +28,7 @@ def setup_content(context):
              {'type': 'Teaser', 'title': 'The World of Zope',
               'data': {'image': sht.load_file(globals(),
                                 'setupdata/teaser_world-of-zope.jpg'),
-                       'link_external': u'../the-world-of-zope'}}]},
+                       'importance': u'3'}}]},
 
         {'type': 'Collage', 'title': u'Start', 'id': 'front-page',
          'data': { 'show_title': False, 'show_description': False, },
@@ -83,6 +83,10 @@ def setup_content(context):
     from Products.Collage.interfaces import IDynamicViewManager
     manager = IDynamicViewManager(site['front-page']['1']['1'])
     manager.setLayout('portlets-top')
+
+    #set the link reference in the teaser
+    site['teasers']['the-world-of-zope'].setLink_internal(site['the-world-of-zope'])
+    site['teasers']['the-world-of-zope'].reindexObject()
 
 START_ZOPE_COMMUNITY_TEXT = u"""
 <p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
