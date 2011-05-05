@@ -12,6 +12,13 @@ def setup_content(context):
     sht.hide_and_retract(site['Members'], logger)
 
     content_structure = [
+
+        {'type': 'Image', 'title': 'old.zope.org Screenshot',
+         'id': u'Screenshotold.zope.org.png',
+         'opts': {'setExcludeFromNav': True},
+         'data': {'image': sht.load_file(globals(),
+                               'setupdata/Screenshotold.zope.org.png')}},
+
         {'type': 'Folder', 'title': u'Teasers',
          'opts': {'workflow': None, # leave private
                   'setLocallyAllowedTypes': ['Teaser',],
@@ -19,10 +26,9 @@ def setup_content(context):
                   'setLayout': 'folder_summary_view'},
          'childs': [
              {'type': 'Teaser', 'title': 'The World of Zope',
-              'data': {'image': sht.load_file(globals(), 'setupdata/teaser_world-of-zope.jpg'),
-                       'link_external': u'../the-world-of-zope'}
-              }]
-          },
+              'data': {'image': sht.load_file(globals(),
+                                'setupdata/teaser_world-of-zope.jpg'),
+                       'link_external': u'../the-world-of-zope'}}]},
 
         {'type': 'Collage', 'title': u'Start', 'id': 'front-page',
          'data': { 'show_title': False, 'show_description': False, },
@@ -30,52 +36,71 @@ def setup_content(context):
              {'type': 'CollageRow', 'title': '', 'id': '1',
               'childs': [
                   # the following column should hold a teaser portlet
-                  {'type': 'CollageColumn', 'title': '', 'id': '1'},
-                  ],
-              },
+                  {'type': 'CollageColumn', 'title': '', 'id': '1'}]},
              {'type': 'CollageRow', 'title': '', 'id': '2',
               'childs': [
                   {'type': 'CollageColumn', 'title': '', 'id': '1',
                    'childs': [
                         {'type': 'Document', 'title': u'Zope Community', 'id': u'front-community',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'text': u"""
-<p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
-<p><a class="internal-link" href="../community">Learn more...</a></p>
-                         """}},
-                                  ],},
+                         'data': {'text': START_ZOPE_COMMUNITY_TEXT}}]},
                   {'type': 'CollageColumn', 'title': '', 'id': '2',
                    'childs': [
                         {'type': 'Document', 'title': u'Zope Foundation', 'id': u'front-foundation',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'text': u"""
-<p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform.</p>
-<p><a class="internal-link" href="../foundation">Learn more...</a></p>
-                         """}},
-                                  ],},
+                         'data': {'text': START_ZOPE_FOUNDATION_TEXT}}]},
                   {'type': 'CollageColumn', 'title': '', 'id': '3',
                    'childs': [
                         {'type': 'Document', 'title': u'Zope.org legacy', 'id': u'front-legacy',
                          'opts': {'setExcludeFromNav': True},
-                         'data': {'text': u"""
+                         'data': {'text': START_ZOPEORG_LEGACY_TEXT}}]},
+            ]},
+        ]},
+
+        {'type': 'Document', 'title': u'The World of Zope', 'id': 'the-world-of-zope',
+         'data': {'text': THE_WORLD_OF_ZOPE_TEXT}},
+
+        {'type': 'Document', 'title': u'News & Events', 'id': u'news-events',
+         'data': {'text': NEWS_EVENTS_TEXT}},
+
+        {'type': 'Document', 'title': u'Community', 'id': u'community',
+         'data': {'text': COMMUNITY_TEXT}},
+
+        {'type': 'Document', 'title': u'Resources', 'id': u'resources',
+         'data': {'text': RESOURCES_TEXT}},
+
+        {'type': 'Document', 'title': u'Zope Foundation', 'id': u'foundation',
+         'data': {'text': ZOPE_FOUNDATION_TEXT}},
+
+        {'type': 'Document', 'title': u'Legal', 'id': u'legal',
+         'opts': {'setExcludeFromNav': True},
+         'data': {'description':u"""Zope.org Legal Notice.""",
+                  'text': LEGAL_TEXT}},
+    ]
+    sht.create_item_runner(site, content_structure, logger=logger)
+
+    # more content configuration, which can't be done via setuphandlertools
+    from Products.Collage.interfaces import IDynamicViewManager
+    manager = IDynamicViewManager(site['front-page']['1']['1'])
+    manager.setLayout('portlets-top')
+
+
+
+START_ZOPE_COMMUNITY_TEXT = u"""
+<p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
+<p><a class="internal-link" href="../community">Learn more...</a></p>
+"""
+START_ZOPE_FOUNDATION_TEXT = u"""
+<p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform.</p>
+<p><a class="internal-link" href="../foundation">Learn more...</a></p>
+"""
+
+START_ZOPEORG_LEGACY_TEXT = u"""
 <p><a href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
 <p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
-                         """}},
-                                  ],},
-                  ],
-              },
+"""
 
-             ],
-         },
-
-        {'type': 'Image', 'title': 'old.zope.org Screenshot', 'id': u'Screenshotold.zope.org.png',
-         'opts': {'setExcludeFromNav': True},
-         'data': {'image': sht.load_file(globals(), 'setupdata/Screenshotold.zope.org.png'),
-                }},
-
-
-         {'type': 'Document', 'title': u'The World of Zope', 'id': 'the-world-of-zope',
-          'data': {'text': u"""
+THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>During more than a dekade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
 <div id="accordion">
 <h2>Application Servers</h2>
@@ -118,10 +143,9 @@ def setup_content(context):
 <p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
 </div>
 </div>
-          """}},
+"""
 
-        {'type': 'Document', 'title': u'News & Events', 'id': u'news-events',
-         'data': {'text': u"""
+NEWS_EVENTS_TEXT = u"""
 <p>Find interesting news and events listed at <a class="external-link" href="http://calendar.zope.org">calendar.zope.org</a>.</p>
 <p>Additional information is available from the major RSS feeds</p>
 <ul>
@@ -129,10 +153,9 @@ def setup_content(context):
 <li><a class="external-link" href="http://planet.plone.org">Planet Plone</a></li>
 <li><a class="external-link" href="http://planet.python.org">Planet Python</a></li>
 </ul>
-         """}},
+"""
 
-        {'type': 'Document', 'title': u'Community', 'id': u'community',
-         'data': {'text': u"""
+COMMUNITY_TEXT = u"""
 <p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
 <h2>Mailing Lists</h2>
 <p>Main Zope related mailing list collection is available at <a class="external-link" href="https://mail.zope.org/mailman/listinfo">mail.zope.org/mailman/listinfo</a></p>
@@ -142,10 +165,9 @@ def setup_content(context):
 <p style="padding-left: 0px; ">Localized Zope related websites, e.g. <a class="external-link" href="http://www.zope.de">www.zope.de<br /></a>Audience/Tool/Product targeted websites, e.g. <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a>, <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a>, <a class="external-link" href="http://grok.zope.org">grok.zope.org</a>, <a class="external-link" href="http://docs.zope.org">docs.zope.org</a>, <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
 <h2 style="padding-left: 0px; ">Planets</h2>
 <p style="padding-left: 0px; ">News collections from different Zope related blogs, like <a class="external-link" href="http://planet.zope.org">Planet Zope</a>, <a class="external-link" href="http://planet.plone.org">Planet Plone</a> and <a class="external-link" href="http://planet.python.org">Planet Python</a>.</p>
-         """}},
+"""
 
-        {'type': 'Document', 'title': u'Resources', 'id': u'resources',
-         'data': {'text': u"""
+RESOURCES_TEXT = u"""
 <h2>Code Repositories</h2>
 <p>Zope public subversion repository provides read-only and selective write access to the source code for Zope's and related projects: <a class="external-link" href="http://svn.zope.org">svn.zope.org</a></p>
 <h2>PyPI</h2>
@@ -161,10 +183,9 @@ def setup_content(context):
 <p>Books on Zope, Plone, Grok, Zope3, Bluebream, Repoze, Zope Component Architecture</p>
 <h2>Archive</h2>
 <p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>
-         """}},
+"""
 
-        {'type': 'Document', 'title': u'Zope Foundation', 'id': u'foundation',
-         'data': {'text': u"""
+ZOPE_FOUNDATION_TEXT = u"""
 <p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform. It does this by supporting the Zope community.</p>
 <p>Our community includes the open source community of contributors to the Zope software, contributors to the documentation and web infrastructure, as well as the community of businesses and organizations that use Zope. The Zope Foundation is the copyright holder of the Zope software and many extensions and associated software. The Zope Foundation also manages the zope.org website, and manages the infrastructure for open source collaboration.</p>
 <div id="_mcePaste"></div>
@@ -183,14 +204,10 @@ def setup_content(context):
 <div id="_mcePaste" style="padding-left: 30px; "></div>
 <div id="_mcePaste" style="padding-left: 30px; ">Fax: +1 (703) 842-8076</div>
 <div style="padding-left: 30px; "></div>
-         """}},
+"""
 
-
-        {'type': 'Document', 'title': u'Legal', 'id': u'legal',
-         'opts': {'setExcludeFromNav': True},
-         'data': {'description':u"""Zope.org Legal Notice.""",
-                  'text':
-u"""<p>All materials found on this web site are the property of Zope Foundation
+LEGAL_TEXT = u"""
+<p>All materials found on this web site are the property of Zope Foundation
 and all rights are reserved. The information contained in and on the various pages
 of the Zope.org web site have been issued for general distribution under
 the protection of United States copyright laws. In addition to US copyright laws,
@@ -213,14 +230,5 @@ distinguished by initial capital letters.</p>
 <p>Zope Foundation does not warrant that the information contained in the web
 site is complete and correct and shall not be liable whatsoever for any damages
 incurred as a result of its use.</p>
-<p>For further inquiry, please contact <a href="mailto:foundation-info@zope.org">foundation-info@zope.org</a>.</p>"""}},
-
-    ]
-    sht.create_item_runner(site, content_structure, logger=logger)
-
-    # more content configuration, which can't be done via setuphandlertools
-    from Products.Collage.interfaces import IDynamicViewManager
-    manager = IDynamicViewManager(site['front-page']['1']['1'])
-    manager.setLayout('collage_teaser_view')
-
-
+<p>For further inquiry, please contact <a href="mailto:foundation-info@zope.org">foundation-info@zope.org</a>.</p>
+"""
