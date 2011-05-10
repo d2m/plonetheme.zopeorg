@@ -8,7 +8,7 @@ Contributors
 ------------
 
 * Andreas Jung (Lead)
-* Michael Haubenwaller
+* Michael Haubenwallner
 * Kai Mertens (Design)
 * Johannes Raggam
 * Jan Filip Tristan Hasecke (zope.de Theme)
