@@ -98,8 +98,8 @@ START_ZOPE_FOUNDATION_TEXT = u"""
 """
 
 START_ZOPEORG_LEGACY_TEXT = u"""
-<p><a href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
-<p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
+<p><a href="http://www.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
+<p>Visit&nbsp;<a class="external-link" href="http://www.zope.org/">old.zope.org</a></p>
 """
 
 THE_WORLD_OF_ZOPE_TEXT = u"""
@@ -122,7 +122,7 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <h2>Databases</h2>
 <div>
 <p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
-<p>More information at <a class="external-link" href="http://zodb.zope.org">zodb.zope.org</a></p>
+<p>More information at <a class="external-link" href="http://www.zodb.org">www.zodb.org</a></p>
 </div>
 <h2>Tools</h2>
 <div>
@@ -132,7 +132,7 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <h2>Frameworks</h2>
 <div>
 <p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
-<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
+<p>More information at <a class="external-link" href="http://www.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
 <p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
 <p>More information at <a class="external-link" href="http://grok.zope.org">grok.zope.org</a></p>
 <p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
@@ -184,7 +184,7 @@ RESOURCES_TEXT = u"""
 <p>Get Books about Zope for online and offline reading.</p>
 <p>Books on Zope, Plone, Grok, Zope3, Bluebream, Repoze, Zope Component Architecture</p>
 <h2>Archive</h2>
-<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>
+<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://www.zope.org">http://old.zope.org</a>.</p>
 """
 
 ZOPE_FOUNDATION_TEXT = u"""
