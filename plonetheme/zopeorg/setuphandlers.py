@@ -127,7 +127,7 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <h2>Tools</h2>
 <div>
 <p><strong>Buildout</strong><br />Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.</p>
-<p>More information at <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
+<p>More information at <a class="external-link" href="http://www.buildout.org">www.buildout.org</a></p>
 </div>
 <h2>Frameworks</h2>
 <div>
