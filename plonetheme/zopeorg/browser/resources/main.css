@@ -111,14 +111,20 @@ fieldset {
 #portal-personaltools {
     margin-left:0;
     background-color:#2375BB;
-    border-radius:0.5em; }
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em; 
+    -khtml-border-radius: 0.5em; }
 #portal-personaltools a {
     font-size:90%;
     font-weight:bold;
     color:white; }
 #portal-personaltools dd {
     background-color:#2375BB;
-    border-radius:0.5em; }
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em; 
+    -khtml-border-radius: 0.5em; }
 #portal-personaltools dd a:hover {
     background:white;
     color:black; }
@@ -840,8 +846,8 @@ div.ui-accordion-content {
     background: #75AD0A;
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-}
+    -moz-border-radius: 0.5em; 
+    -khtml-border-radius: 0.5em; }
 #content a.external-link:hover, dl.portlet a.external-link:hover {
-    color: black !important;
-}
+    color:white !important;
+    background-color:#2375BB; }
