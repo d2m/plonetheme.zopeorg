@@ -98,8 +98,8 @@ START_ZOPE_FOUNDATION_TEXT = u"""
 """
 
 START_ZOPEORG_LEGACY_TEXT = u"""
-<p><a href="http://www.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
-<p>Visit&nbsp;<a class="external-link" href="http://www.zope.org/">old.zope.org</a></p>
+<p><a href="http://old.zope.org/" style="padding-left: 0px; "><img alt="old.zope.org" class="image-right" src="Screenshotold.zope.org.png"></a>Looking for the ancient Zope website?</p>
+<p>Visit&nbsp;<a class="external-link" href="http://old.zope.org/">old.zope.org</a></p>
 """
 
 THE_WORLD_OF_ZOPE_TEXT = u"""
