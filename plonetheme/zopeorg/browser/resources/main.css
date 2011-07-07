@@ -48,7 +48,7 @@ img {
 div.documentByLine {
     color: #666666;
     display: block;
-    font-size: 75%;
+    font-size: 65%;
     padding:5px; }
 
 .documentDescription{
@@ -431,10 +431,12 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
     margin-bottom:15px;
     height:40px;
     padding:0; }
+
+dl.portlet { font-size: 65%; }
 .portletItem {
-    line-height:2em;
     padding:8px 0 0;
     margin:0px; }
+
 .portletItemTitle{
     color:#363636;
     font-size:12px;
