@@ -34,4 +34,11 @@
       permission="zope2.View"
       />
 
+  <browser:viewlet
+      name="zopeorg.documentbyline"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class="plone.app.layout.viewlets.content.DocumentBylineViewlet"
+      permission="zope2.View"
+      />
+
 </configure>
