@@ -128,7 +128,8 @@ fieldset {
 #portal-personaltools dd a:hover {
     background:white;
     color:black; }
-
+#portal-personaltools #anon-personalbar a {
+    margin-right:0; }
 
 #portal-siteactions {
     padding: 3px 0;
