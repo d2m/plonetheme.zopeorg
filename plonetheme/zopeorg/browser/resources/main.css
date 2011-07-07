@@ -107,13 +107,28 @@ fieldset {
     padding: 0;
     text-align: right;
     float: right;
-}
+    margin-top:18px; }
+#portal-personaltools {
+    margin-left:0;
+    background-color:#2375BB;
+    border-radius:0.5em; }
+#portal-personaltools a {
+    font-size:90%;
+    font-weight:bold;
+    color:white; }
+#portal-personaltools dd {
+    background-color:#2375BB;
+    border-radius:0.5em; }
+#portal-personaltools dd a:hover {
+    background:white;
+    color:black; }
+
 
 #portal-siteactions {
     padding: 3px 0;
     text-align: right;
     float: right;
-}
+    margin-top:18px; }
 
 #portal-siteactions li {
     display: inline;
