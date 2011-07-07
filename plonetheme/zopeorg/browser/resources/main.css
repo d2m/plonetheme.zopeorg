@@ -45,6 +45,12 @@ img {
     margin:0;
     padding:0; }
 
+div.documentByLine {
+    color: #666666;
+    display: block;
+    font-size: 75%;
+    padding:5px; }
+
 .documentDescription{
     color:#2375BB;
     line-height:20px;
@@ -157,14 +163,13 @@ fieldset {
     padding: 0;
     clear: both;
     float: left;
-}
-
+    max-width:777px;
+    overflow:hidden; }
 #portal-globalnav li {
     float: left;
     list-style-type: none;
-    padding-right: 20px;
-}
-
+    padding-right: 20px; }
+#portal-globalnav li:last-child { padding-right:0; }
 #portal-globalnav li a {
     color: #FFFFFF;
     background: none;
@@ -174,25 +179,20 @@ fieldset {
     padding: 14px 0 15px;
     text-decoration: none;
     border-right: none;
-    min-width:0;
-}
-
+    min-width:0; }
 #portal-globalnav li a:hover {
     color: #C0E0FC;
-    text-decoration: none;
-}
-
+    text-decoration: none; }
 #portal-globalnav .selected a, #portal-globalnav .selected a:hover {
     background-color: transparent;
     background-image: url(++resource++plonetheme.zopeorg.images/main_nav_active.jpg);
     background-position: 50% bottom;
     background-repeat: no-repeat;
-    color: #C0E0FC;
-}
-
+    color: #C0E0FC; }
 #portal-globalnav .selected a, #portal-globalnav .selected a:hover, #portal-globalnav a:hover {
-    background-color: transparent;
-}
+    background-color: transparent; }
+
+
 
 dl.error {
     border: 1px solid #bb2243;
