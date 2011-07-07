@@ -275,6 +275,8 @@ fieldset .error {
     padding:10px 20px 20px 20px; }
 #portal-column-two { float:right; }
 
+.section-front-page #portal-columns div.width-full {
+    background:none; }
 #portal-columns div.width-full {
     background-color:transparent;
     background-image:url(++resource++plonetheme.zopeorg.images/column_full.png);
@@ -461,10 +463,6 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
     margin:0;
     padding: 0; }
 
-.section-front-page .portlet{
-    background-image:url(++resource++plonetheme.zopeorg.images/home_news_bg.jpg);
-    background-repeat:no-repeat;
-    padding:20px 20px 15px; }
 .section-front-page #portal-column-two{
     padding-top:25px;
     width:375px; }
