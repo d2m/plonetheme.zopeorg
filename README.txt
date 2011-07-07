@@ -4,6 +4,12 @@ plonetheme.zopeorg
 ``plonetheme.zopeorg`` is the theme for the 2010 www.zope.org relaunch.
 It is based on the dzug.theme as used for www.zope.de.
 
+
+Deployment
+----------
+* Import the Generic Setup default profile via portal_setup.
+* Clear and Rebuild the catalog.
+
 Contributors
 ------------
 

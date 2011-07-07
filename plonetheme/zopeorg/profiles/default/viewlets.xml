@@ -1,24 +1,20 @@
 <?xml version="1.0"?>
 <object>
-	<hidden manager="plone.portalfooter" skinname="zopeorg_theme">
-		<viewlet name="plone.colophon" />
-		<viewlet name="plone.footer" />
-		<viewlet name="plone.site_actions" />
-	</hidden>
-	<order manager="plone.portalheader" skinname="zopeorg_theme" purge="True">
-	    <viewlet name="plone.skip_links" insert-before="*"/>
-		<viewlet name="plone.logo"/>
-		<viewlet name="plone.personal_bar"/>
-		<viewlet name="plone.app.i18n.locales.languageselector"/>
-		<viewlet name="zopeorg.site_actions"/>
-		<viewlet name="plone.global_sections"/>
-		<viewlet name="plone.searchbox"/>
-	</order>
-    <hidden manager="plone.abovecontent" skinname="zopeorg_theme">
-        <viewlet name="plone.path_bar" />
-    </hidden>
-    <order manager="plone.portaltop" skinname="zopeorg_theme" purge="True">
-        <viewlet name="plone.header" />
-        <viewlet name="zopeorg.path_bar" />
-    </order>
+  <hidden manager="plone.portalfooter" skinname="zopeorg_theme">
+    <viewlet name="plone.colophon" />
+    <viewlet name="plone.footer" />
+    <viewlet name="plone.site_actions" />
+  </hidden>
+  <order manager="plone.portalheader" skinname="zopeorg_theme" purge="True">
+    <viewlet name="plone.skip_links" insert-before="*"/>
+    <viewlet name="plone.logo"/>
+    <viewlet name="plone.personal_bar"/>
+    <viewlet name="plone.app.i18n.locales.languageselector"/>
+    <viewlet name="zopeorg.site_actions"/>
+    <viewlet name="plone.global_sections"/>
+    <viewlet name="plone.searchbox"/>
+  </order>
+  <hidden manager="plone.abovecontent" skinname="zopeorg_theme">
+    <viewlet name="plone.path_bar" />
+  </hidden>
 </object>
