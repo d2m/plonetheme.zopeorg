@@ -152,30 +152,6 @@ fieldset {
     text-decoration: underline;
 }
 
-#siteaction-login {
-    background: transparent url(++resource++plonetheme.zopeorg.images/login_icon.gif) no-repeat top left;
-    padding-bottom: 9px;
-    padding-right: 58px !important;
-}
-
-#siteaction-login a {
-    position: absolute;
-    width: 58px !important;
-    height: 24px !important;
-}
-
-#siteaction-logout {
-    background: transparent url(++resource++plonetheme.zopeorg.images/logout.gif) no-repeat top left;
-    padding-bottom: 9px;
-    padding-right: 58px !important;
-}
-
-#siteaction-logout a {
-    position: absolute;
-    width: 58px !important;
-    height: 24px !important;
-}
-
 /* globalnav */
 #portal-globalnav {
     background: none;
@@ -406,7 +382,7 @@ dl.portletError dd {
     padding:0; }
 
 .documentFirstHeading {
-    background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
+    background-image:url(++resource++plonetheme.zopeorg.images/line.png);
     background-position:0 35px;
     height:40px;
     background-repeat:repeat-x;
@@ -420,7 +396,7 @@ dl.portlet dt, div.portletAssignments div.portletHeader,
     font-style:italic;
     text-decoration:none;
     font-weight: bold;background-color:transparent;
-    background-image:url(++resource++plonetheme.zopeorg.images/line.gif);
+    background-image:url(++resource++plonetheme.zopeorg.images/line.png);
     background-repeat:repeat-x;
     background-position:0 32px;
     margin-bottom:15px;
@@ -438,37 +414,6 @@ dl.portlet { font-size: 65%; }
     font-weight:bold; }
 .portletItemDescription { padding-bottom:5px; }
 .portletItemDetails{ display: none; }
-.portletItemMore {
-    background-image:url(++resource++plonetheme.zopeorg.images/show_more_icon.gif);
-    background-position:right center;
-    background-repeat:no-repeat;
-    padding-right:25px;
-    font-size:12px;
-    color:#BB234F;
-    font-style:italic;
-    text-decoration:none;
-    text-transform:uppercase; }
-.portletItemMore:hover {
-    background-image:url(++resource++plonetheme.zopeorg.images/show_more_h_icon.gif);
-    background-position:right center;
-    background-repeat:no-repeat;
-    color:#2375BB;
-    padding-right:25px; }
-
-.portlet_rss_link {
-    background-image:url(++resource++plonetheme.zopeorg.images/rss_icon_alt.gif);
-    background-position:right center;
-    background-repeat:no-repeat;
-    display:block;
-    height:20px;
-    padding:0;
-    width:60px;
-    float:right; }
-.portlet_rss_link:hover {
-    background-image:url(++resource++plonetheme.zopeorg.images/rss_icon_hover_alt.gif);
-    background-position:right center;
-    background-repeat:no-repeat; }
-
 
 
 .navTreeItem div{
@@ -730,7 +675,7 @@ dl.portlet ul.navTreeLevel0 > .navTreeItem {
     color: #5A5A5A; }
 .searchButton {
     background-color:transparent;
-    background-image:url("++resource++plonetheme.zopeorg.images/search_button.gif");
+    background-image:url("++resource++plonetheme.zopeorg.images/search_button.png");
     background-position:center center;
     background-attachment:scroll;
     background-repeat:no-repeat;
@@ -840,3 +785,39 @@ div.ui-accordion-content {
 #content a.external-link:hover, dl.portlet a.external-link:hover {
     color:white !important;
     background-color:#2375BB; }
+
+
+/* unused? */
+
+.portletItemMore {
+    background-image:url(++resource++plonetheme.zopeorg.images/show_more_icon.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+    padding-right:25px;
+    font-size:12px;
+    color:#BB234F;
+    font-style:italic;
+    text-decoration:none;
+    text-transform:uppercase; }
+.portletItemMore:hover {
+    background-image:url(++resource++plonetheme.zopeorg.images/show_more_h_icon.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+    color:#2375BB;
+    padding-right:25px; }
+
+.portlet_rss_link {
+    background-image:url(++resource++plonetheme.zopeorg.images/rss_icon_alt.png);
+    background-position:right center;
+    background-repeat:no-repeat;
+    display:block;
+    height:20px;
+    padding:0;
+    width:60px;
+    float:right; }
+.portlet_rss_link:hover {
+    background-image:url(++resource++plonetheme.zopeorg.images/rss_icon_hover_alt.png);
+    background-position:right center;
+    background-repeat:no-repeat; }
+
+

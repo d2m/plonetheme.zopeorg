@@ -3,6 +3,6 @@
     <h3>&copy; <span tal:replace="python:modules['DateTime'].DateTime().year()">2011</span> Zope Foundation</h3>
   </div>
   <div id="feeter_right">
-    <a href="" tal:attributes="href python: view.navigation_root_url"><img alt="Zope" src="++resource++plonetheme.zopeorg.images/zope_logo_feeter.gif"/></a>
+    <a href="" tal:attributes="href python: view.navigation_root_url"><img alt="Zope" src="++resource++plonetheme.zopeorg.images/zope_logo_footer.png"/></a>
   </div>
 </div>
