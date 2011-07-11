@@ -1,11 +1,8 @@
-<div id="portal-feeter-wrapper">
-  <div id="portal-feeter">
-    <div id="feeter_left">
-    <p> </p>
-      <h3>&copy; <span tal:replace="python:modules['DateTime'].DateTime().year()">2011</span> Zope Foundation</h3>
-    </div>
-    <div id="feeter_right">
-      <a href="" tal:attributes="href python: view.navigation_root_url"><img alt="Zope" src="++resource++plonetheme.zopeorg.images/zope_logo_feeter.gif"/></a>
-    </div>
+<div id="portal-feeter">
+  <div id="feeter_left">
+    <h3>&copy; <span tal:replace="python:modules['DateTime'].DateTime().year()">2011</span> Zope Foundation</h3>
+  </div>
+  <div id="feeter_right">
+    <a href="" tal:attributes="href python: view.navigation_root_url"><img alt="Zope" src="++resource++plonetheme.zopeorg.images/zope_logo_feeter.gif"/></a>
   </div>
 </div>

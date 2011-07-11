@@ -4,9 +4,15 @@
 #collage .portletTeaser  { padding:0; margin:0 -10px 1em -10px; }
 /* styles for zope.org */
 body {
-    background-color: #C9C9C9;
-    background-image: url(++resource++plonetheme.zopeorg.images/body_bg.jpg);
-    background-repeat: repeat-x;
+    /*fallback*/
+    background:url(++resource++plonetheme.zopeorg.images/bg_body.png) repeat-x scroll top left;
+    /*default css3*/
+    background:url(++resource++plonetheme.zopeorg.images/bg_body.png), url(++resource++plonetheme.zopeorg.images/bg_footer.png);
+    background-repeat:repeat-x,repeat-x;
+    background-attachment:scroll,scroll;
+    background-position:top left, bottom left;
+    background-color:#C9C9C9;
+    
     color: #5A5A5A;
     font-family: Verdana, Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -16,29 +22,20 @@ body {
 }
 
 h1, #content h1 {
-    font-size: 1.6em;
-}
-
+    font-size: 1.6em; }
 h2, #content h2 {
     font-size: 1.4em;
-    color: rgb(35, 117, 187);
-}
-
+    color: rgb(35, 117, 187); }
 h3, #content h3 {
     font-size: 1.2em;
     font-weight: normal;
     color: rgb(35, 117, 187);
-    font-style: normal;
-}
+    font-style: normal; }
 
 a {
     color: #bd4265;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #2375BB;
-}
+    text-decoration: none; }
+a:hover { color: #2375BB; }
 
 img {
     border:0 none;
@@ -367,43 +364,34 @@ dd.portletItem .navTreeItem a:hover {
 
 /* portal feeter  */
 #portal-feeter {
-    color:#E3E3E3;
-    padding:0px 20px;
-    margin: 0pt auto;
-    width:980px; }
-#portal-feeter-wrapper{
-    border-top:1px solid #E3E3E3;
-    border-bottom:3px solid #5C5C5C;
+    /* h:150px w:980px */
     clear:both;
     background-color:#6B6B6B;
-    background-image:url(++resource++plonetheme.zopeorg.images/feeter_bg.jpg);
-    background-repeat:repeat-x; }
+    background-image:url(++resource++plonetheme.zopeorg.images/bg_footer.png);
+    background-repeat:repeat-x;
+    color:#E3E3E3;
+    height:110px;
+    width:940px; 
+    padding:20px; }
 #feeter_left { float:left; }
+#feeter_right { text-align:right; }
 #feeter_left h2 {
     color:White;
     font-size:12px;
     font-weight:normal;
     margin:0;
     padding:25px 0 5px; }
-#feeter_left p {
-    color:#9A9A9A;
-    font-size:10px;
-    margin:0;
-    padding:0px 0 35px; }
 #feeter_left h3 {
     color:White;
     font-size:12px;
     font-weight:normal;
     margin:0;
     padding:0 0 30px; }
-#feeter_right img {
-    border:0 none;
+#feeter_left p {
+    color:#9A9A9A;
+    font-size:10px;
     margin:0;
-    padding:0; }
-#feeter_right {
-    height: 109px;
-    padding:25px 0;
-    text-align:right; }
+    padding:0px 0 35px; }
 
 .divider { padding-bottom:12px; }
 
