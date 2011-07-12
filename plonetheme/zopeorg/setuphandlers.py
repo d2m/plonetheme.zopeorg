@@ -104,33 +104,23 @@ START_ZOPEORG_LEGACY_TEXT = u"""
 
 THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>During more than a decade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
-<div id="accordion">
-<h2>Application Servers</h2>
-<div>
+<h2 class="accordion">Application Servers</h2>
 <p><strong>Zope<br /></strong>Zope is a Python-based application server for building secure and highly scalable web applications.</p>
 <p>More information at <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a></p>
 <p><strong>BlueBream</strong><br />BlueBream – formerly known as Zope 3 – is a web framework written in the Python programming language.</p>
 <p>More information at <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a></p>
-</div>
-<h2>Zope based CMS</h2>
-<div>
+<h2 class="accordion">Zope based CMS</h2>
 <p><strong>Plone</strong><br />Plone, the enterprise ready Content Management System based on Zope.</p>
 <p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
 <p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
 <p>More information at <a class="external-link" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>
-</div>
-<h2>Databases</h2>
-<div>
+<h2 class="accordion">Databases</h2>
 <p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
 <p>More information at <a class="external-link" href="http://www.zodb.org">www.zodb.org</a></p>
-</div>
-<h2>Tools</h2>
-<div>
+<h2 class="accordion">Tools</h2>
 <p><strong>Buildout</strong><br />Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.</p>
 <p>More information at <a class="external-link" href="http://www.buildout.org">www.buildout.org</a></p>
-</div>
-<h2>Frameworks</h2>
-<div>
+<h2 class="accordion">Frameworks</h2>
 <p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
 <p>More information at <a class="external-link" href="http://www.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
 <p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
@@ -143,8 +133,6 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>More information at <a class="external-link" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>
 <p><strong>ZTK﻿<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
 <p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
-</div>
-</div>
 """
 
 NEWS_EVENTS_TEXT = u"""
@@ -190,22 +178,16 @@ RESOURCES_TEXT = u"""
 ZOPE_FOUNDATION_TEXT = u"""
 <p>The Zope Foundation has the goal to promote, maintain, and develop the Zope platform. It does this by supporting the Zope community.</p>
 <p>Our community includes the open source community of contributors to the Zope software, contributors to the documentation and web infrastructure, as well as the community of businesses and organizations that use Zope. The Zope Foundation is the copyright holder of the Zope software and many extensions and associated software. The Zope Foundation also manages the zope.org website, and manages the infrastructure for open source collaboration.</p>
-<div id="_mcePaste"></div>
-<div id="_mcePaste"></div>
-<div>For more information, visit <a class="external-link" href="http://foundation.zope.org">foundation.zope.org</a>.</div>
-<div></div>
-<h2><br />Contacting the Zope Foundation</h2>
-<div></div>
-<div id="_mcePaste"></div>
-<div id="_mcePaste" style="padding-left: 30px; "><strong>Zope Foundation</strong></div>
-<div id="_mcePaste" style="padding-left: 30px; ">901 Tyrrell Road</div>
-<div id="_mcePaste" style="padding-left: 30px; ">Raleigh, NC 27609</div>
-<div id="_mcePaste" style="padding-left: 30px; ">USA</div>
-<div id="_mcePaste" style="padding-left: 30px; "></div>
-<div id="_mcePaste" style="padding-left: 30px; ">Email: <a class="mail-link" href="mailto:foundation-info@zope.org">foundation-info@zope.org</a></div>
-<div id="_mcePaste" style="padding-left: 30px; "></div>
-<div id="_mcePaste" style="padding-left: 30px; ">Fax: +1 (703) 842-8076</div>
-<div style="padding-left: 30px; "></div>
+<p>For more information, visit <a class="external-link" href="http://foundation.zope.org">foundation.zope.org</a>.</p>
+<h2>Contacting the Zope Foundation</h2>
+<p style="padding-left: 30px; ">
+    <strong>Zope Foundation</strong><br />
+    901 Tyrrell Road<br />
+    Raleigh, NC 27609<br />
+    USA<br />
+    Email: <a class="mail-link" href="mailto:foundation-info@zope.org">foundation-info@zope.org</a><br />
+    Fax: +1 (703) 842-8076<br />
+</p>
 """
 
 LEGAL_TEXT = u"""
