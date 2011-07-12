@@ -109,6 +109,8 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>More information at <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a></p>
 <p><strong>BlueBream</strong><br />BlueBream – formerly known as Zope 3 – is a web framework written in the Python programming language.</p>
 <p>More information at <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a></p>
+<p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
+<p>More information at <a class="external-link" href="http://grok.zope.org">grok.zope.org</a></p>
 <h2 class="accordion">Zope based CMS</h2>
 <p><strong>Plone</strong><br />Plone, the enterprise ready Content Management System based on Zope.</p>
 <p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
@@ -122,9 +124,7 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>More information at <a class="external-link" href="http://www.buildout.org">www.buildout.org</a></p>
 <h2 class="accordion">Frameworks</h2>
 <p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
-<p>More information at <a class="external-link" href="http://www.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
-<p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
-<p>More information at <a class="external-link" href="http://grok.zope.org">grok.zope.org</a></p>
+<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
 <p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
 <p>More information at <a class="external-link" href="http://www.repoze.org">www.repoze.org</a></p>
 <p><strong>ZCA<br /></strong>The Zope Component Architecture.</p>
@@ -150,7 +150,7 @@ COMMUNITY_TEXT = u"""
 <h2>Mailing Lists</h2>
 <p>Main Zope related mailing list collection is available at <a class="external-link" href="https://mail.zope.org/mailman/listinfo">mail.zope.org/mailman/listinfo</a></p>
 <h2>IRC</h2>
-<p style="padding-left: 0px; ">freenode.net hosts lots of Zope and Zope products/application related IRC channels. Visit <a class="external-link" href="http://irc.freenode.net">irc.freenode.net</a> and try one of the following channels: #zope, #zope.de, #zope3-dev, #plone, #plone-framework, #plone-tuneup</p>
+<p style="padding-left: 0px; ">freenode.net hosts lots of Zope and Zope products/application related IRC channels. Visit <a class="external-link" href="http://irc.freenode.net">irc.freenode.net</a> and try one of the following channels: #zope, #zope.de, #zope3-dev, #plone, #bluebream, #grok</p>
 <h2 style="padding-left: 0px; ">Websites</h2>
 <p style="padding-left: 0px; ">Localized Zope related websites, e.g. <a class="external-link" href="http://www.zope.de">www.zope.de<br /></a>Audience/Tool/Product targeted websites, e.g. <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a>, <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a>, <a class="external-link" href="http://grok.zope.org">grok.zope.org</a>, <a class="external-link" href="http://docs.zope.org">docs.zope.org</a>, <a class="external-link" href="http://buildout.zope.org">buildout.zope.org</a></p>
 <h2 style="padding-left: 0px; ">Planets</h2>
@@ -172,7 +172,7 @@ RESOURCES_TEXT = u"""
 <p>Get Books about Zope for online and offline reading.</p>
 <p>Books on Zope, Plone, Grok, Zope3, Bluebream, Repoze, Zope Component Architecture</p>
 <h2>Archive</h2>
-<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://www.zope.org">http://old.zope.org</a>.</p>
+<p>Looking for the ancient Zope website? Visit <a class="external-link" href="http://old.zope.org">http://old.zope.org</a>.</p>
 """
 
 ZOPE_FOUNDATION_TEXT = u"""
@@ -182,9 +182,6 @@ ZOPE_FOUNDATION_TEXT = u"""
 <h2>Contacting the Zope Foundation</h2>
 <p style="padding-left: 30px; ">
     <strong>Zope Foundation</strong><br />
-    901 Tyrrell Road<br />
-    Raleigh, NC 27609<br />
-    USA<br />
     Email: <a class="mail-link" href="mailto:foundation-info@zope.org">foundation-info@zope.org</a><br />
     Fax: +1 (703) 842-8076<br />
 </p>
