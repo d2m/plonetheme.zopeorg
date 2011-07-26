@@ -6,4 +6,5 @@
     cacheable="True" compression="safe" cookable="True"
     enabled="1" expression=""/>
  <stylesheet id="columns.css" enabled="0" />
+ <stylesheet id="mobile.css" enabled="0" />
 </object>
