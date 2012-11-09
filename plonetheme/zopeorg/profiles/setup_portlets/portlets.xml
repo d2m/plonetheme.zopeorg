@@ -8,16 +8,17 @@
       key="/front-page/1/1"
       manager="collage.portletmanager"
       visible="True">
+    <property name="display_columns">1</property>
     <property name="importance_levels">
       <element>1</element>
       <element>2</element>
       <element>3</element>
       <element>4</element>
     </property>
+    <property name="teaser_scale">0_overfull</property>
     <property name="num_teasers">1</property>
+    <property name="ajaxified">False</property>
     <property name="show_title">False</property>
-    <property name="prefer_altimage">False</property>
-    <property name="image_size">0_overfull</property>
   </assignment>
   <assignment name="a-bit-of-history" 
       type="plone.portlet.static.Static"
