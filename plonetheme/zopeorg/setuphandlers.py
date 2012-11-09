@@ -139,11 +139,12 @@ NEWS_EVENTS_TEXT = u"""
 <p>Find interesting news and events listed at <a class="external-link" href="http://calendar.zope.org">calendar.zope.org</a>.</p>
 <p>Additional information is available from the major RSS feeds</p>
 <ul>
-<li><a class="external-link" href="http://planetzope.org">Planet Zope</a></li>
 <li><a class="external-link" href="http://planet.plone.org">Planet Plone</a></li>
 <li><a class="external-link" href="http://planet.python.org">Planet Python</a></li>
 </ul>
 """
+# Planet Zope doesn't exist any more
+# <li><a class="external-link" href="http://planetzope.org">Planet Zope</a></li>
 
 COMMUNITY_TEXT = u"""
 <p>The Zope community is one of the largest and most professional open-source communities worldwide.</p>
