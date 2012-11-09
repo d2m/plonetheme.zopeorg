@@ -104,6 +104,23 @@ START_ZOPEORG_LEGACY_TEXT = u"""
 
 THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>During more than a decade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
+
+<h2 class="accordion">Frameworks</h2>
+<p><strong>ZCA<br /></strong>The Zope Component Architecture.</p>
+<p>More information at <a class="external-link" href="http://wiki.zope.org/zope3">wiki.zope.org/zope3</a></p>
+<p><strong>ZTK<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
+<p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
+<p><strong>ZPT<br /></strong>Zope Page Templates is Zope's templating mechanism.</p>
+<p>More information at <a class="external-link" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>
+<p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
+<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
+<p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
+<p>More information at <a class="external-link" href="http://www.repoze.org">www.repoze.org</a></p>
+
+<h2 class="accordion">Databases</h2>
+<p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
+<p>More information at <a class="external-link" href="http://www.zodb.org">www.zodb.org</a></p>
+
 <h2 class="accordion">Application Servers</h2>
 <p><strong>Zope<br /></strong>Zope is a Python-based application server for building secure and highly scalable web applications.</p>
 <p>More information at <a class="external-link" href="http://zope2.zope.org">zope2.zope.org</a></p>
@@ -111,28 +128,23 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>More information at <a class="external-link" href="http://bluebream.zope.org">bluebream.zope.org</a></p>
 <p><strong>Grok<br /></strong>Grok is a web application framework for Python developers.</p>
 <p>More information at <a class="external-link" href="http://grok.zope.org">grok.zope.org</a></p>
-<h2 class="accordion">Zope based CMS</h2>
-<p><strong>Plone</strong><br />Plone, the enterprise ready Content Management System based on Zope.</p>
-<p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
-<p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
-<p>More information at <a class="external-link" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>
-<h2 class="accordion">Databases</h2>
-<p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
-<p>More information at <a class="external-link" href="http://www.zodb.org">www.zodb.org</a></p>
+
 <h2 class="accordion">Tools</h2>
 <p><strong>Buildout</strong><br />Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.</p>
 <p>More information at <a class="external-link" href="http://www.buildout.org">www.buildout.org</a></p>
-<h2 class="accordion">Frameworks</h2>
-<p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
-<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
-<p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
-<p>More information at <a class="external-link" href="http://www.repoze.org">www.repoze.org</a></p>
-<p><strong>ZCA<br /></strong>The Zope Component Architecture.</p>
-<p>More information at <a class="external-link" href="http://wiki.zope.org/zope3">wiki.zope.org/zope3</a></p>
-<p><strong>ZPT<br /></strong>Zope Page Templates is Zope's templating mechanism.</p>
-<p>More information at <a class="external-link" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>
-<p><strong>ZTK﻿<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
-<p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
+
+<h2 class="accordion">Zope based Software</h2>
+<p><strong>Plone</strong><br />
+Plone is a user friendly Content Management System running on top of Python, Zope and the CMF. It's a perfect fit in collaborative, enterprise environments but also for small sites.</p>
+<p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
+<p><strong>Pyramid</strong><br />Pyramid is a small, fast, down-to-earth, open source Python web application development framework. It makes real-world web application development and deployment more fun, more predictable, and more productive.</p>
+<p>More information at <a class="external-link" href="http://www.pylonsproject.org/projects/pyramid/about">pylonsproject.org/projects/pyramid/about</a></p>
+<p><strong>Twisted</strong><br />An asynchronous, extensible networking framework, with special focus on event-based programming and multiprotocol integration.</p>
+<p>More information at <a class="external-link" href="http://twistedmatrix.com/">twistedmatrix.com</a></p>
+<p><strong>Mailman 3</strong><br />Mailman is free software for managing electronic mail discussion and e-newsletter lists.</p>
+<p>More information at <a class="external-link" href="https://launchpad.net/mailman">launchpad.net/mailman</a></p>
+<p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
+<p>More information at <a class="external-link" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>
 """
 
 NEWS_EVENTS_TEXT = u"""
