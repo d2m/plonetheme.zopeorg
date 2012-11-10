@@ -144,15 +144,16 @@ Plone is a user friendly Content Management System running on top of Python, Zop
 <p>More information at <a class="external-link" href="http://www.plone.org">Plone.org</a></p>
 <p><strong>Pyramid</strong><br />Pyramid is a small, fast, down-to-earth, open source Python web application development framework. It makes real-world web application development and deployment more fun, more predictable, and more productive.</p>
 <p>More information at <a class="external-link" href="http://www.pylonsproject.org/projects/pyramid/about">Pyramid</a></p>
-<p><strong>Twisted</strong><br />An asynchronous, extensible networking framework, with special focus on event-based programming and multiprotocol integration.</p>
-<p>More information at <a class="external-link" href="http://twistedmatrix.com/">twistedmatrix.com</a></p>
-<p><strong>Mailman 3</strong><br />Mailman is free software for managing electronic mail discussion and e-newsletter lists.</p>
-<p>More information at <a class="external-link" href="https://launchpad.net/mailman">Mailman</a></p>
 <p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
 <p>More information at <a class="external-link" href="http://infrae.com/products/silva">Silva</a></p>
 <p><strong>ERP5</strong><br /><span>ERP5 is a full featured Open Source ERP/CRM application framework, based on an unified Model to describe its implementation.
 <p>More information at <a class="external-link" href="http://www.erp5.com/">ERP5.com</a></p>
 """
+## ... verwenden nur einen kleinen teil von zope. nicht mit fremden federn schmücken
+#<p><strong>Twisted</strong><br />An asynchronous, extensible networking framework, with special focus on event-based programming and multiprotocol integration.</p>
+#<p>More information at <a class="external-link" href="http://twistedmatrix.com/">twistedmatrix.com</a></p>
+#<p><strong>Mailman 3</strong><br />Mailman is free software for managing electronic mail discussion and e-newsletter lists.</p>
+#<p>More information at <a class="external-link" href="https://launchpad.net/mailman">Mailman</a></p>
 
 NEWS_EVENTS_TEXT = u"""
 <p>Find interesting news and events listed at <a class="external-link" href="http://calendar.zope.org">calendar.zope.org</a>.</p>
