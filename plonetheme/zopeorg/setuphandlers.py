@@ -106,20 +106,25 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 <p>During more than a decade Zope Corp. and the Zope Community have grown an outstanding set of products and technologies, influencing the general development of Python based Web application servers and tools.</p>
 
 <h2 class="accordion">Frameworks</h2>
-<p><strong>ZCA<br /></strong>The Zope Component Architecture.</p>
-<p>More information at <a class="external-link" href="http://wiki.zope.org/zope3">wiki.zope.org/zope3</a></p>
-<p><strong>ZTK<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks.</p>
-<p>More information at <a class="external-link" href="http://docs.zope.org/zopetoolkit/">docs.zope.org/zopetoolkit/</a></p>
+
+<p><strong>ZCA<br /></strong>The Zope Component Architecture provides facilities for defining, registering and looking up components. It's perfect for building enterprise applications based on loosely coupled components.</p>
+<p>More information at <a class="external-link" href="http://wiki.zope.org/zope3/ComponentArchitectureOverview">Component Architecture Overview</a>, <a class="external-link" href="http://docs.zope.org/zope.component/">zope.component documentation</a> and <a class="external-link" href="http://docs.zope.org/zope.interface/">zope.interface documentation</a></p>
+
+<p><strong>ZTK<br /></strong>The Zope Toolkit (ZTK) is a set of libraries intended for reuse by projects to develop web applications or web frameworks. The ZCA is part of it.</p>
+<p>More information at the <a class="external-link" href="http://docs.zope.org/zopetoolkit/">Zopetoolkit documentation</a></p>
+
 <p><strong>ZPT<br /></strong>Zope Page Templates is Zope's templating mechanism.</p>
-<p>More information at <a class="external-link" href="http://docs.zope.org/zope2/zope2book/AppendixC.html">docs.zope.org/zope2/zope2book/AppendixC.html</a></p>
-<p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications.</p>
-<p>More information at <a class="external-link" href="http://old.zope.org/Products/CMF/">old.zope.org/Products/CMF/</a></p>
+<p>More information at the <a class="external-link" href="ZPT documentation in Zope2 Book">docs.zope.org/zope2/zope2book/AppendixC.html</a>. An alternative implementation provides <a class="external-link" href="http://chameleon.repoze.org/">Chameleon</a>.</p>
+
+<p><strong>CMF</strong><br />The Content Management Framework (CMF) for Zope provides a powerful, tailorable platform for building content management applications together with the Zope Application Server.</p>
+<p>More information at the <a class="external-link" href="http://old.zope.org/Products/CMF/">CMF Product Page</a></p>
+
 <p><strong>Repoze<br /></strong>Repoze integrates Zope technologies with WSGI and reusable Python middleware.</p>
-<p>More information at <a class="external-link" href="http://www.repoze.org">www.repoze.org</a></p>
+<p>More information at <a class="external-link" href="http://repoze.org">repoze.org</a></p>
 
 <h2 class="accordion">Databases</h2>
 <p><strong>ZODB</strong><br />The Zope Object DataBase (ZODB) is a native object database, that stores your objects while allowing you to work with any paradigms that can be expressed in Python.</p>
-<p>More information at <a class="external-link" href="http://www.zodb.org">www.zodb.org</a></p>
+<p>More information at <a class="external-link" href="http://zodb.org">zodb.org</a></p>
 
 <h2 class="accordion">Application Servers</h2>
 <p><strong>Zope<br /></strong>Zope is a Python-based application server for building secure and highly scalable web applications.</p>
@@ -131,20 +136,22 @@ THE_WORLD_OF_ZOPE_TEXT = u"""
 
 <h2 class="accordion">Tools</h2>
 <p><strong>Buildout</strong><br />Buildout is a Python-based build system for creating, assembling and deploying applications from multiple parts, some of which may be non-Python-based.</p>
-<p>More information at <a class="external-link" href="http://www.buildout.org">www.buildout.org</a></p>
+<p>More information at <a class="external-link" href="http://www.buildout.org">Buildout.org</a></p>
 
 <h2 class="accordion">Zope based Software</h2>
 <p><strong>Plone</strong><br />
 Plone is a user friendly Content Management System running on top of Python, Zope and the CMF. It's a perfect fit in collaborative, enterprise environments but also for small sites.</p>
-<p>More information at <a class="external-link" href="http://www.plone.org">www.plone.org</a></p>
+<p>More information at <a class="external-link" href="http://www.plone.org">Plone.org</a></p>
 <p><strong>Pyramid</strong><br />Pyramid is a small, fast, down-to-earth, open source Python web application development framework. It makes real-world web application development and deployment more fun, more predictable, and more productive.</p>
-<p>More information at <a class="external-link" href="http://www.pylonsproject.org/projects/pyramid/about">pylonsproject.org/projects/pyramid/about</a></p>
+<p>More information at <a class="external-link" href="http://www.pylonsproject.org/projects/pyramid/about">Pyramid</a></p>
 <p><strong>Twisted</strong><br />An asynchronous, extensible networking framework, with special focus on event-based programming and multiprotocol integration.</p>
 <p>More information at <a class="external-link" href="http://twistedmatrix.com/">twistedmatrix.com</a></p>
 <p><strong>Mailman 3</strong><br />Mailman is free software for managing electronic mail discussion and e-newsletter lists.</p>
-<p>More information at <a class="external-link" href="https://launchpad.net/mailman">launchpad.net/mailman</a></p>
+<p>More information at <a class="external-link" href="https://launchpad.net/mailman">Mailman</a></p>
 <p><strong>Silva</strong><br /><span>Silva is a powerful CMS for organizations that manage multiple or complex websites.</span></p>
-<p>More information at <a class="external-link" href="http://infrae.com/products/silva">infrae.com/products/silva</a></p>
+<p>More information at <a class="external-link" href="http://infrae.com/products/silva">Silva</a></p>
+<p><strong>ERP5</strong><br /><span>ERP5 is a full featured Open Source ERP/CRM application framework, based on an unified Model to describe its implementation.
+<p>More information at <a class="external-link" href="http://www.erp5.com/">ERP5.com</a></p>
 """
 
 NEWS_EVENTS_TEXT = u"""
