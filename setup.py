@@ -49,4 +49,10 @@ setup(name='plonetheme.zopeorg',
           'archetypes.schemaextender',
           'collective.teaser',
       ],
+      entry_points="""
+      # -*- Entry points: -*-
+
+      [z3c.autoinclude.plugin]
+      target = plone
+      """,
       )
