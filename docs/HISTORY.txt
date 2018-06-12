@@ -4,6 +4,8 @@ Changelog
 1.0 (unreleased)
 ----------------
 
+* Fixed the Portal URL image link from the footer section [macagua]
+
 * Added support for z3c.autoinclude plugin [macagua]
 
 * Added more strings classifiers items for this package [macagua]
