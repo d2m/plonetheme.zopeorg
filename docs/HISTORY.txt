@@ -4,5 +4,7 @@ Changelog
 1.0 (unreleased)
 ----------------
 
+- Added more improvements about README file [macagua]
+
 * import of dzug.theme from Gocept repository and
   renamed to plonetheme.zopeorg
