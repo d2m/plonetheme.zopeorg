@@ -4,9 +4,11 @@ Changelog
 1.0 (unreleased)
 ----------------
 
+* Added support for z3c.autoinclude plugin [macagua]
+
 * Added more strings classifiers items for this package [macagua]
 
-- Added more improvements about README file [macagua]
+* Added more improvements about README file [macagua]
 
 * import of dzug.theme from Gocept repository and
   renamed to plonetheme.zopeorg
