@@ -91,13 +91,13 @@ Deployment
 Usage
 =====
 
+* For add default layout builded with `Products.Collage`_ product, go to the 
+  **/select_default_page** view and select a ``Start`` content type and save it.
+
 * Using the `collective.teaser`_ product, you can manage teaser portlets, go to the 
   **@@manage-teaserportlets** view, then add a ``Teaser Portlet`` just select 
   from the ``Image Scale`` list the ``1_full(952, 952)`` option and unchecking the 
   ``Show title`` option,  and save it.
-
-* For add default layout builded with `Products.Collage`_ product, go to the 
-  **/select_default_page** view and select a ``Start`` content type and save it.
 
 
 Contribute
